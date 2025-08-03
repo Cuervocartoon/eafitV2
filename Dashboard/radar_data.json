@@ -1,50 +1,56 @@
 [
     {
-        "Acción Climática y Energía":3.02,
-        "Capital Humano: Bienestar y Desarrollo":4.76,
-        "Diversidad, Equidad e Inclusión (DEI)":2.32,
-        "Gestión de Recursos Naturales y Circularidad":3.47,
-        "Impacto Económico, Social y Comunitario":0.99,
-        "Transparencia y Gobierno de la Sostenibilidad":3.97
+        "category":"Acción Climática y Energía",
+        "Agropecuario":3.0158730162,
+        "Comercio":8.5498279487,
+        "Construcción":5.0818543375,
+        "Manufactura":11.8655683123,
+        "Minero":9.9404481307,
+        "Servicios":8.6295777384
     },
     {
-        "Acción Climática y Energía":8.55,
-        "Capital Humano: Bienestar y Desarrollo":7.29,
-        "Diversidad, Equidad e Inclusión (DEI)":4.98,
-        "Gestión de Recursos Naturales y Circularidad":1.91,
-        "Impacto Económico, Social y Comunitario":1.98,
-        "Transparencia y Gobierno de la Sostenibilidad":10.41
+        "category":"Capital Humano: Bienestar y Desarrollo",
+        "Agropecuario":4.7619047633,
+        "Comercio":7.2919779084,
+        "Construcción":5.5897472177,
+        "Manufactura":6.7492802205,
+        "Minero":9.5574450642,
+        "Servicios":6.4096626638
     },
     {
-        "Acción Climática y Energía":5.08,
-        "Capital Humano: Bienestar y Desarrollo":5.59,
-        "Diversidad, Equidad e Inclusión (DEI)":2.49,
-        "Gestión de Recursos Naturales y Circularidad":5.39,
-        "Impacto Económico, Social y Comunitario":2.15,
-        "Transparencia y Gobierno de la Sostenibilidad":11.11
+        "category":"Diversidad, Equidad e Inclusión (DEI)",
+        "Agropecuario":2.3166023172,
+        "Comercio":4.9823983657,
+        "Construcción":2.4882055527,
+        "Manufactura":3.8919275588,
+        "Minero":3.7462558278,
+        "Servicios":9.3244360042
     },
     {
-        "Acción Climática y Energía":11.87,
-        "Capital Humano: Bienestar y Desarrollo":6.75,
-        "Diversidad, Equidad e Inclusión (DEI)":3.89,
-        "Gestión de Recursos Naturales y Circularidad":8.74,
-        "Impacto Económico, Social y Comunitario":2.57,
-        "Transparencia y Gobierno de la Sostenibilidad":9.11
+        "category":"Gestión de Recursos Naturales y Circularidad",
+        "Agropecuario":3.4722222221,
+        "Comercio":1.9064369981,
+        "Construcción":5.3881434441,
+        "Manufactura":8.7428681707,
+        "Minero":11.6991670701,
+        "Servicios":3.9501407994
     },
     {
-        "Acción Climática y Energía":9.94,
-        "Capital Humano: Bienestar y Desarrollo":9.56,
-        "Diversidad, Equidad e Inclusión (DEI)":3.75,
-        "Gestión de Recursos Naturales y Circularidad":11.7,
-        "Impacto Económico, Social y Comunitario":5.22,
-        "Transparencia y Gobierno de la Sostenibilidad":8.72
+        "category":"Impacto Económico, Social y Comunitario",
+        "Agropecuario":0.9920634923,
+        "Comercio":1.980391315,
+        "Construcción":2.1452380957,
+        "Manufactura":2.5684497599,
+        "Minero":5.2223864619,
+        "Servicios":4.6916406327
     },
     {
-        "Acción Climática y Energía":8.63,
-        "Capital Humano: Bienestar y Desarrollo":6.41,
-        "Diversidad, Equidad e Inclusión (DEI)":9.32,
-        "Gestión de Recursos Naturales y Circularidad":3.95,
-        "Impacto Económico, Social y Comunitario":4.69,
-        "Transparencia y Gobierno de la Sostenibilidad":20.72
+        "category":"Transparencia y Gobierno de la Sostenibilidad",
+        "Agropecuario":3.9682539694,
+        "Comercio":10.4072398169,
+        "Construcción":11.1111111125,
+        "Manufactura":9.1093117385,
+        "Minero":8.7179487153,
+        "Servicios":20.7219251366
     }
 ]

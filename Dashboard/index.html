@@ -14,6 +14,7 @@
     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/plugins/exporting.js"></script>
 
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,13 +24,13 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8;
+            background-color: #ADD8E6;
             /* Un azul grisáceo más suave */
         }
     </style>
 </head>
 
-<body class="bg-gray-100">
+<body>
 
     <!-- Contenedor Principal -->
     <div class="container mx-auto p-4 md:p-8">
@@ -52,7 +53,7 @@
 
             <!-- INICIO: Radar de Competitividad por Pilar y Macrosector -->
             <div class="bg-white p-6 rounded-lg shadow-md w-full">
-                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-center">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
                     <div class="prose max-w-none md:col-span-3">
                         <h2 class="text-2xl font-bold text-gray-800 mb-2">1. Radar de Competitividad por Pilar y Macrosector</h2>
                         <p class="text-gray-600">
@@ -81,7 +82,7 @@
                             <strong>Análisis Estratégico:</strong> Permite identificar líderes y rezagados, y revela qué pilares son universalmente desafiantes. Pase el cursor sobre una celda para ver el valor exacto.
                         </p>
                     </div>
-                    <div class="relative w-full md:col-span-7 h-[600px]">
+                    <div class="relative w-full md:col-span-7 h-[1000px]">
                         <div id="heatmapContainer" class="w-full h-full"></div>
                     </div>
                 </div>
@@ -96,161 +97,225 @@
 
         // Función para el Gráfico de Radar
         function setupRadarChart() {
-            // CORRECCIÓN: Usar am5.net.load para cargar JSON
             am5.net.load("radar_data.json").then(function (result) {
+                const data = am5.JSONParser.parse(result.response);
 
-                // CORRECCIÓN: Parsear la respuesta como JSON
-                const data = JSON.parse(result.response);
+                // Crear el elemento raíz para el gráfico
+                var root = am5.Root.new("radarCompetitividadChart");
 
-                if (!data || data.length === 0) {
-                    console.error("No se pudieron cargar los datos de radar_data.json o el archivo está vacío.");
-                    document.getElementById("radarCompetitividadChart").innerHTML = `<div class="text-red-500 text-center">Error al cargar <code>radar_data.json</code>.</div>`;
-                    return;
-                }
+                // Aplicar el tema animado por defecto
+                root.setThemes([
+                    am5themes_Animated.new(root)
+                ]);
 
-                let root = am5.Root.new("radarCompetitividadChart");
-                root.setThemes([am5themes_Animated.new(root)]);
-
-                let chart = root.container.children.push(am5radar.RadarChart.new(root, {
+                // Crear el gráfico de radar
+                var chart = root.container.children.push(am5radar.RadarChart.new(root, {
                     panX: false,
                     panY: false,
                     wheelX: "panX",
                     wheelY: "zoomX",
-                    innerRadius: am5.percent(20)
+                    innerRadius: am5.percent(20),
+                    startAngle: -90,
+                    endAngle: 270
                 }));
 
-                let cursor = chart.set("cursor", am5radar.RadarCursor.new(root, {
+                // Crear y configurar el cursor para interactividad
+                var cursor = chart.set("cursor", am5radar.RadarCursor.new(root, {
                     behavior: "zoomX"
                 }));
+
                 cursor.lineY.set("visible", false);
 
-                // El campo de categoría es 'Nombre Pilar'
-                let xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+                // Crear el eje X (eje de categorías radiales)
+                var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
                     maxDeviation: 0,
-                    categoryField: "Nombre Pilar",
-                    renderer: am5radar.AxisRendererCircular.new(root, {})
+                    categoryField: "category",
+                    renderer: am5radar.AxisRendererCircular.new(root, {
+                        // Opcional: ajustar el espaciado interno si las etiquetas se superponen
+                    })
                 }));
 
-                // Asignar los datos al eje X
-                xAxis.data.setAll(data);
+                // Configurar las etiquetas y la cuadrícula del eje X
+                xAxis.get("renderer").labels.template.setAll({
+                    fontSize: "0.8rem",
+                    textType: "adjusted",
+                    radius: 10,
+                    paddingTop: 10,
+                    paddingBottom: 10,
+                    textAlign: "center",
+                    oversizedBehavior: "wrap",
+                    maxWidth: 150
+                });
 
-                let yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+
+                // Crear el eje Y (eje de valores)
+                var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
                     renderer: am5radar.AxisRendererRadial.new(root, {
                         minGridDistance: 20
                     })
                 }));
 
-                // Crear una serie para cada macrosector
-                // Los nombres de los macrosectores son las claves de cada objeto, excepto 'Nombre Pilar'
-                const macrosectors = Object.keys(data[0]).filter(key => key !== 'Nombre Pilar');
+                yAxis.get("renderer").labels.template.setAll({
+                    fontSize: "0.7rem"
+                });
 
-                macrosectors.forEach(sector => {
-                    let series = chart.series.push(am5radar.RadarLineSeries.new(root, {
-                        name: sector,
+                // Crear la leyenda del gráfico
+                var legend = chart.children.push(am5.Legend.new(root, {
+                    x: am5.percent(100),
+                    centerX: am5.percent(100),
+                    layout: root.verticalLayout,
+                    y: am5.percent(85),
+                    centerY: am5.percent(100),
+                }));
+                var exporting = am5plugins_exporting.Exporting.new(root, {
+                    menu: am5plugins_exporting.ExportingMenu.new(root, {}),
+                    dataSource: data
+                });
+
+                // Función para crear una serie (un polígono para cada macrosector)
+                function createSeries(name, field) {
+                    var series = chart.series.push(am5radar.RadarLineSeries.new(root, {
+                        name: name,
                         xAxis: xAxis,
                         yAxis: yAxis,
-                        valueYField: sector,
-                        categoryXField: "Nombre Pilar",
+                        valueYField: field,
+                        categoryXField: "category",
                         tooltip: am5.Tooltip.new(root, {
-                            labelText: "{name}: {valueY}"
+                            labelText: "[bold]{name}[/]: {valueY}"
                         })
                     }));
-                    series.strokes.template.setAll({ strokeWidth: 2 });
+
+                    // Configurar la apariencia de la línea y el relleno
+                    series.strokes.template.setAll({
+                        strokeWidth: 2
+                    });
+                    series.fills.template.setAll({
+                        fillOpacity: 0.2,
+                        visible: true
+                    });
+
+                    // Configurar las viñetas (puntos en los ejes)
                     series.bullets.push(function () {
                         return am5.Bullet.new(root, {
                             sprite: am5.Circle.new(root, {
-                                radius: 5,
+                                radius: 4,
                                 fill: series.get("fill")
                             })
                         });
                     });
 
-                    // Los datos ya están en el formato correcto, solo hay que asignarlos
+                    // Asignar datos a la serie
                     series.data.setAll(data);
                     series.appear(1000);
-                });
 
-                let legend = chart.children.push(am5.Legend.new(root, {
-                    centerX: am5.percent(50),
-                    x: am5.percent(50)
-                }));
-                legend.data.setAll(chart.series.values);
+                    // La leyenda se poblará a partir de esta serie automáticamente
+                    legend.data.push(series);
+                }
 
+                // Obtener los nombres de los macrosectores de los datos (excluyendo 'category')
+                if (data.length > 0) {
+                    var macrosectors = Object.keys(data[0]).filter(key => key !== 'category');
+                    macrosectors.forEach(sector => {
+                        createSeries(sector, sector);
+                    });
+                }
+
+                // Asignar datos al eje X
+                xAxis.data.setAll(data);
+
+                // CORRECCIÓN: La siguiente línea fue eliminada porque es redundante y causa el error.
+                // La leyenda se actualiza automáticamente cuando se le añaden series.
+                // legend.data.setAll(chart.series);
+
+                // Iniciar la animación del gráfico
                 chart.appear(1000, 100);
 
             }).catch(function (error) {
-                console.error("Error en setupRadarChart:", error);
-                document.getElementById("radarCompetitividadChart").innerHTML = `<div class="text-red-500 text-center">Error al procesar <code>radar_data.json</code>.</div>`;
+                console.error("Error al cargar o procesar radar_data.json:", error);
+                document.getElementById("radarCompetitividadChart").innerHTML = `<div class="text-red-500 text-center p-4"><strong>Error:</strong> No se pudo cargar el gráfico. Verifique que el archivo <code>radar_data.json</code> exista y que la consola del navegador no muestre errores.</div>`;
             });
         }
 
-
         // Función para la Matriz Térmica (Heatmap)
         function setupHeatmap() {
-            // CORRECCIÓN: Usar am5.net.load para cargar JSON
             am5.net.load("heatmap_data.json").then(function (result) {
+                const data = am5.JSONParser.parse(result.response);
 
-                // CORRECCIÓN: Parsear la respuesta como JSON
-                const longData = JSON.parse(result.response);
+                // Crear el elemento raíz para el gráfico
+                var root = am5.Root.new("heatmapContainer");
 
-                if (!longData || longData.length === 0) {
-                    console.error("No se pudieron cargar los datos de heatmap_data.json o el archivo está vacío.");
-                    document.getElementById("heatmapContainer").innerHTML = `<div class="text-red-500 text-center">Error al cargar <code>heatmap_data.json</code>.</div>`;
-                    return;
-                }
+                // Set themes
+                // https://www.amcharts.com/docs/v5/concepts/themes/
+                root.setThemes([
+                    am5themes_Animated.new(root)
+                ]);
 
-                // CORRECCIÓN: Obtener categorías únicas del formato largo
-                const pilares = [...new Set(longData.map(item => item.pilar))];
-                const empresas = [...new Set(longData.map(item => item.empresa))];
-
-                let root = am5.Root.new("heatmapContainer");
-                root.setThemes([am5themes_Animated.new(root)]);
-
-                let chart = root.container.children.push(am5xy.XYChart.new(root, {
+                // Create chart
+                // https://www.amcharts.com/docs/v5/charts/xy-chart/
+                var chart = root.container.children.push(am5xy.XYChart.new(root, {
                     panX: false,
                     panY: false,
                     wheelX: "none",
                     wheelY: "none",
-                    layout: root.verticalLayout,
                     paddingLeft: 0,
-                    paddingRight: 0
+                    layout: root.verticalLayout
                 }));
 
-                // Crear ejes
-                let yRenderer = am5xy.AxisRendererY.new(root, { minGridDistance: 0, inversed: true, inside: true });
-                yRenderer.labels.template.setAll({
-                    fontSize: 10,
-                    rotation: 0,
-                    centerY: am5.p50,
-                    centerX: am5.p100,
-                    paddingRight: 10
+
+                // Create axes and their renderers
+                var yRenderer = am5xy.AxisRendererY.new(root, {
+                    visible: false,
+                    minGridDistance: 20,
+                    inversed: true,
+                    minorGridEnabled: true
                 });
 
-                let yAxis = chart.yAxes.push(am5xy.CategoryAxis.new(root, {
+                yRenderer.grid.template.set("visible", false);
+
+                var yAxis = chart.yAxes.push(am5xy.CategoryAxis.new(root, {
                     maxDeviation: 0,
                     renderer: yRenderer,
                     categoryField: "empresa"
                 }));
-                yAxis.data.setAll(empresas.map(e => ({ empresa: e })));
 
+                var yRenderer2 = yAxis.get("renderer");
+                yRenderer2.labels.template.setAll({
 
-                let xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
-                xRenderer.labels.template.setAll({
-                    fontSize: 10,
-                    rotation: -45,
-                    centerY: am5.p50,
-                    centerX: am5.p0,
-                    paddingRight: 10
+                    fontSize: "0.8rem",
+                    textAlign: "center",
+                    oversizedBehavior: "wrap",
+                    maxWidth: 100
                 });
 
-                let xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+                var xRenderer = am5xy.AxisRendererX.new(root, {
+                    visible: false,
+                    minGridDistance: 30,
+                    opposite: true,
+                    minorGridEnabled: true
+                });
+
+
+                xRenderer.grid.template.set("visible", false);
+
+                var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
                     renderer: xRenderer,
                     categoryField: "pilar"
                 }));
-                xAxis.data.setAll(pilares.map(p => ({ pilar: p })));
 
-                // Crear series
-                let series = chart.series.push(am5xy.ColumnSeries.new(root, {
+                var xRenderer2 = xAxis.get("renderer");
+                xRenderer2.labels.template.setAll({
+                    // rotation: -90,
+                    centerY: am5.p50,
+                    fontSize: "0.8rem",
+                    textAlign: "center",
+                    oversizedBehavior: "wrap",
+                    maxWidth: 100
+                });
+
+
+                // Create series
+                // https://www.amcharts.com/docs/v5/charts/xy-chart/#Adding_series
+                var series = chart.series.push(am5xy.ColumnSeries.new(root, {
                     calculateAggregates: true,
                     stroke: am5.color(0xffffff),
                     clustered: false,
@@ -258,52 +323,89 @@
                     yAxis: yAxis,
                     categoryXField: "pilar",
                     categoryYField: "empresa",
-                    valueField: "valor"
+                    valueField: "value"
                 }));
 
                 series.columns.template.setAll({
-                    tooltipText: "{categoryY}, {categoryX}: {value}",
+                    tooltipText: "[bold]{categoryY}[/]\n[bold]{categoryX}[/]: {value}",
                     strokeOpacity: 1,
                     strokeWidth: 2,
                     width: am5.percent(100),
                     height: am5.percent(100)
                 });
 
-                series.data.setAll(longData);
 
-                // Configurar Heat Rule (regla de color)
+
+                series.columns.template.events.on("pointerover", function (event) {
+                    var di = event.target.dataItem;
+                    if (di) {
+                        heatLegend.showValue(di.get("value", 0));
+                    }
+                });
+
+                series.events.on("datavalidated", function () {
+                    heatLegend.set("startValue", series.getPrivate("valueHigh"));
+                    heatLegend.set("endValue", series.getPrivate("valueLow"));
+                });
+
+
+                // Set up heat rules
+                // https://www.amcharts.com/docs/v5/concepts/settings/heat-rules/
                 series.set("heatRules", [{
                     target: series.columns.template,
-                    min: am5.color(0xff621f), // Rojo
-                    max: am5.color(0x32CD32), // Verde
+                    min: am5.color("#595959"),
+                    max: am5.color("#FFD900"),
                     dataField: "value",
                     key: "fill"
                 }]);
 
-                let heatLegend = chart.children.push(am5.HeatLegend.new(root, {
+
+                // Add heat legend
+                // https://www.amcharts.com/docs/v5/concepts/legend/heat-legend/
+                var heatLegend = chart.bottomAxesContainer.children.push(am5.HeatLegend.new(root, {
                     orientation: "horizontal",
-                    startColor: am5.color(0xff621f),
-                    endColor: am5.color(0x32CD32),
-                    startText: "Bajo",
-                    endText: "Alto",
-                    stepCount: 5
+                    endColor: am5.color("#595959"),
+                    startColor: am5.color("#FFD900")
                 }));
 
-                // CORRECCIÓN: Encontrar el valor máximo sin D3
-                const maxValor = Math.max(...longData.map(d => d.valor), 0);
 
-                heatLegend.startValue.set("value", 0);
-                heatLegend.endValue.set("value", maxValor);
-                series.set("heatLegend", heatLegend);
+                // Set data
+                // https://www.amcharts.com/docs/v5/charts/xy-chart/#Setting_data
 
+                series.data.setAll(data);
+
+                // Auto-populate X and Y axis category data
+                var empresas = [];
+                var pilars = [];
+                am5.array.each(data, function (row) {
+                    if (empresas.indexOf(row.empresa) == -1) {
+                        empresas.push(row.empresa);
+                    }
+                    if (pilars.indexOf(row.pilar) == -1) {
+                        pilars.push(row.pilar);
+                    }
+                });
+
+
+                yAxis.data.setAll(empresas.map(function (item) {
+                    return { empresa: item }
+                }));
+
+
+                xAxis.data.setAll(pilars.map(function (item) {
+                    return { pilar: item }
+                }));
+
+
+                // Make stuff animate on load
+                // https://www.amcharts.com/docs/v5/concepts/animations/#Initial_animation
                 chart.appear(1000, 100);
 
             }).catch(function (error) {
-                console.error("Error en setupHeatmap:", error);
-                document.getElementById("heatmapContainer").innerHTML = `<div class="text-red-500 text-center">Error al procesar <code>heatmap_data.json</code>.</div>`;
+                console.error("Error al cargar o procesar heatmap_data.json:", error);
+                document.getElementById("heatmapContainer").innerHTML = `<div class="text-red-500 text-center p-4"><strong>Error:</strong> No se pudo cargar el gráfico. Verifique que el archivo <code>heatmap_data.json</code> exista y que la consola del navegador no muestre errores.</div>`;
             });
         }
-
         // Ejecutar las funciones cuando el DOM esté listo
         am5.ready(function () {
             setupRadarChart();

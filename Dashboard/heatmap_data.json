@@ -1,601 +1,3002 @@
-,empresa,pilar,valor
-0,ARA,Acción Climática y Energía,52.94
-1,ARA,Capital Humano: Bienestar y Desarrollo,35.29
-2,ARA,"Diversidad, Equidad e Inclusión (DEI)",0.0
-3,ARA,Gestión de Recursos Naturales y Circularidad,5.88
-4,ARA,"Impacto Económico, Social y Comunitario",0.0
-5,ARA,Transparencia y Gobierno de la Sostenibilidad,0.0
-6,ARQUITECTURA Y CONCRETO,Acción Climática y Energía,42.86
-7,ARQUITECTURA Y CONCRETO,Capital Humano: Bienestar y Desarrollo,0.0
-8,ARQUITECTURA Y CONCRETO,"Diversidad, Equidad e Inclusión (DEI)",0.0
-9,ARQUITECTURA Y CONCRETO,Gestión de Recursos Naturales y Circularidad,14.29
-10,ARQUITECTURA Y CONCRETO,"Impacto Económico, Social y Comunitario",7.14
-11,ARQUITECTURA Y CONCRETO,Transparencia y Gobierno de la Sostenibilidad,0.0
-12,AUTOPISTA RIO MAGDALENA SAS,Acción Climática y Energía,101.01
-13,AUTOPISTA RIO MAGDALENA SAS,Capital Humano: Bienestar y Desarrollo,95.24
-14,AUTOPISTA RIO MAGDALENA SAS,"Diversidad, Equidad e Inclusión (DEI)",23.55
-15,AUTOPISTA RIO MAGDALENA SAS,Gestión de Recursos Naturales y Circularidad,79.02
-16,AUTOPISTA RIO MAGDALENA SAS,"Impacto Económico, Social y Comunitario",64.29
-17,AUTOPISTA RIO MAGDALENA SAS,Transparencia y Gobierno de la Sostenibilidad,95.24
-18,AVICOLA EL MADROÑO SA,Acción Climática y Energía,19.05
-19,AVICOLA EL MADROÑO SA,Capital Humano: Bienestar y Desarrollo,28.57
-20,AVICOLA EL MADROÑO SA,"Diversidad, Equidad e Inclusión (DEI)",0.0
-21,AVICOLA EL MADROÑO SA,Gestión de Recursos Naturales y Circularidad,23.81
-22,AVICOLA EL MADROÑO SA,"Impacto Económico, Social y Comunitario",0.0
-23,AVICOLA EL MADROÑO SA,Transparencia y Gobierno de la Sostenibilidad,0.0
-24,AVSA,Acción Climática y Energía,19.05
-25,AVSA,Capital Humano: Bienestar y Desarrollo,14.29
-26,AVSA,"Diversidad, Equidad e Inclusión (DEI)",0.0
-27,AVSA,Gestión de Recursos Naturales y Circularidad,0.0
-28,AVSA,"Impacto Económico, Social y Comunitario",14.29
-29,AVSA,Transparencia y Gobierno de la Sostenibilidad,14.29
-30,Aliar,Acción Climática y Energía,85.71
-31,Aliar,Capital Humano: Bienestar y Desarrollo,42.86
-32,Aliar,"Diversidad, Equidad e Inclusión (DEI)",28.57
-33,Aliar,Gestión de Recursos Naturales y Circularidad,95.24
-34,Aliar,"Impacto Económico, Social y Comunitario",21.43
-35,Aliar,Transparencia y Gobierno de la Sostenibilidad,71.43
-36,Alimentos Carnicos (Grupo Nutresa),Acción Climática y Energía,172.15
-37,Alimentos Carnicos (Grupo Nutresa),Capital Humano: Bienestar y Desarrollo,42.11
-38,Alimentos Carnicos (Grupo Nutresa),"Diversidad, Equidad e Inclusión (DEI)",56.66
-39,Alimentos Carnicos (Grupo Nutresa),Gestión de Recursos Naturales y Circularidad,118.26
-40,Alimentos Carnicos (Grupo Nutresa),"Impacto Económico, Social y Comunitario",77.29
-41,Alimentos Carnicos (Grupo Nutresa),Transparencia y Gobierno de la Sostenibilidad,63.16
-42,Alpina,Acción Climática y Energía,194.84
-43,Alpina,Capital Humano: Bienestar y Desarrollo,42.11
-44,Alpina,"Diversidad, Equidad e Inclusión (DEI)",11.93
-45,Alpina,Gestión de Recursos Naturales y Circularidad,102.26
-46,Alpina,"Impacto Económico, Social y Comunitario",36.4
-47,Alpina,Transparencia y Gobierno de la Sostenibilidad,47.37
-48,Amarilo,Acción Climática y Energía,77.57
-49,Amarilo,Capital Humano: Bienestar y Desarrollo,73.48
-50,Amarilo,"Diversidad, Equidad e Inclusión (DEI)",46.05
-51,Amarilo,Gestión de Recursos Naturales y Circularidad,85.42
-52,Amarilo,"Impacto Económico, Social y Comunitario",29.0
-53,Amarilo,Transparencia y Gobierno de la Sostenibilidad,95.24
-54,Avianca,Acción Climática y Energía,64.36
-55,Avianca,Capital Humano: Bienestar y Desarrollo,47.0
-56,Avianca,"Diversidad, Equidad e Inclusión (DEI)",48.76
-57,Avianca,Gestión de Recursos Naturales y Circularidad,41.18
-58,Avianca,"Impacto Económico, Social y Comunitario",32.11
-59,Avianca,Transparencia y Gobierno de la Sostenibilidad,117.65
-60,BEL STAR S.A.,Acción Climática y Energía,105.26
-61,BEL STAR S.A.,Capital Humano: Bienestar y Desarrollo,21.05
-62,BEL STAR S.A.,"Diversidad, Equidad e Inclusión (DEI)",31.58
-63,BEL STAR S.A.,Gestión de Recursos Naturales y Circularidad,55.26
-64,BEL STAR S.A.,"Impacto Económico, Social y Comunitario",15.79
-65,BEL STAR S.A.,Transparencia y Gobierno de la Sostenibilidad,63.16
-66,Banco de Bogotá,Acción Climática y Energía,105.5
-67,Banco de Bogotá,Capital Humano: Bienestar y Desarrollo,47.06
-68,Banco de Bogotá,"Diversidad, Equidad e Inclusión (DEI)",103.84
-69,Banco de Bogotá,Gestión de Recursos Naturales y Circularidad,32.35
-70,Banco de Bogotá,"Impacto Económico, Social y Comunitario",70.59
-71,Banco de Bogotá,Transparencia y Gobierno de la Sostenibilidad,147.06
-72,Bancolombia,Acción Climática y Energía,92.69
-73,Bancolombia,Capital Humano: Bienestar y Desarrollo,38.19
-74,Bancolombia,"Diversidad, Equidad e Inclusión (DEI)",29.15
-75,Bancolombia,Gestión de Recursos Naturales y Circularidad,20.59
-76,Bancolombia,"Impacto Económico, Social y Comunitario",41.18
-77,Bancolombia,Transparencia y Gobierno de la Sostenibilidad,147.06
-78,Bavaria (Kopps),Acción Climática y Energía,130.01
-79,Bavaria (Kopps),Capital Humano: Bienestar y Desarrollo,0.0
-80,Bavaria (Kopps),"Diversidad, Equidad e Inclusión (DEI)",15.95
-81,Bavaria (Kopps),Gestión de Recursos Naturales y Circularidad,31.58
-82,Bavaria (Kopps),"Impacto Económico, Social y Comunitario",10.53
-83,Bavaria (Kopps),Transparencia y Gobierno de la Sostenibilidad,31.58
-84,Biomax,Acción Climática y Energía,52.94
-85,Biomax,Capital Humano: Bienestar y Desarrollo,35.29
-86,Biomax,"Diversidad, Equidad e Inclusión (DEI)",0.0
-87,Biomax,Gestión de Recursos Naturales y Circularidad,5.88
-88,Biomax,"Impacto Económico, Social y Comunitario",0.0
-89,Biomax,Transparencia y Gobierno de la Sostenibilidad,0.0
-90,C.I Prodeco,Acción Climática y Energía,0.0
-91,C.I Prodeco,Capital Humano: Bienestar y Desarrollo,19.23
-92,C.I Prodeco,"Diversidad, Equidad e Inclusión (DEI)",0.0
-93,C.I Prodeco,Gestión de Recursos Naturales y Circularidad,0.0
-94,C.I Prodeco,"Impacto Económico, Social y Comunitario",15.38
-95,C.I Prodeco,Transparencia y Gobierno de la Sostenibilidad,15.38
-96,CARTON DE COLOMBIA S.A. (Smurfit Kappa),Acción Climática y Energía,105.26
-97,CARTON DE COLOMBIA S.A. (Smurfit Kappa),Capital Humano: Bienestar y Desarrollo,61.88
-98,CARTON DE COLOMBIA S.A. (Smurfit Kappa),"Diversidad, Equidad e Inclusión (DEI)",20.98
-99,CARTON DE COLOMBIA S.A. (Smurfit Kappa),Gestión de Recursos Naturales y Circularidad,78.95
-100,CARTON DE COLOMBIA S.A. (Smurfit Kappa),"Impacto Económico, Social y Comunitario",47.37
-101,CARTON DE COLOMBIA S.A. (Smurfit Kappa),Transparencia y Gobierno de la Sostenibilidad,78.95
-102,CI Eslop,Acción Climática y Energía,52.94
-103,CI Eslop,Capital Humano: Bienestar y Desarrollo,35.29
-104,CI Eslop,"Diversidad, Equidad e Inclusión (DEI)",0.0
-105,CI Eslop,Gestión de Recursos Naturales y Circularidad,5.88
-106,CI Eslop,"Impacto Económico, Social y Comunitario",0.0
-107,CI Eslop,Transparencia y Gobierno de la Sostenibilidad,0.0
-108,CONCESIONARIA VIAL UNIÓN DEL SUR SAS,Acción Climática y Energía,54.65
-109,CONCESIONARIA VIAL UNIÓN DEL SUR SAS,Capital Humano: Bienestar y Desarrollo,23.81
-110,CONCESIONARIA VIAL UNIÓN DEL SUR SAS,"Diversidad, Equidad e Inclusión (DEI)",9.52
-111,CONCESIONARIA VIAL UNIÓN DEL SUR SAS,Gestión de Recursos Naturales y Circularidad,70.96
-112,CONCESIONARIA VIAL UNIÓN DEL SUR SAS,"Impacto Económico, Social y Comunitario",42.71
-113,CONCESIONARIA VIAL UNIÓN DEL SUR SAS,Transparencia y Gobierno de la Sostenibilidad,76.19
-114,CONSTRUCCIONES EL CONDOR S.A,Acción Climática y Energía,0.0
-115,CONSTRUCCIONES EL CONDOR S.A,Capital Humano: Bienestar y Desarrollo,47.62
-116,CONSTRUCCIONES EL CONDOR S.A,"Diversidad, Equidad e Inclusión (DEI)",13.62
-117,CONSTRUCCIONES EL CONDOR S.A,Gestión de Recursos Naturales y Circularidad,28.57
-118,CONSTRUCCIONES EL CONDOR S.A,"Impacto Económico, Social y Comunitario",21.43
-119,CONSTRUCCIONES EL CONDOR S.A,Transparencia y Gobierno de la Sostenibilidad,76.19
-120,CONSTRUCTORA CAPITAL BOGOTA SAS,Acción Climática y Energía,28.88
-121,CONSTRUCTORA CAPITAL BOGOTA SAS,Capital Humano: Bienestar y Desarrollo,0.0
-122,CONSTRUCTORA CAPITAL BOGOTA SAS,"Diversidad, Equidad e Inclusión (DEI)",0.0
-123,CONSTRUCTORA CAPITAL BOGOTA SAS,Gestión de Recursos Naturales y Circularidad,17.01
-124,CONSTRUCTORA CAPITAL BOGOTA SAS,"Impacto Económico, Social y Comunitario",21.43
-125,CONSTRUCTORA CAPITAL BOGOTA SAS,Transparencia y Gobierno de la Sostenibilidad,76.19
-126,CONSTRUCTORA COLPATRIA  SAS,Acción Climática y Energía,14.29
-127,CONSTRUCTORA COLPATRIA  SAS,Capital Humano: Bienestar y Desarrollo,47.62
-128,CONSTRUCTORA COLPATRIA  SAS,"Diversidad, Equidad e Inclusión (DEI)",28.57
-129,CONSTRUCTORA COLPATRIA  SAS,Gestión de Recursos Naturales y Circularidad,26.77
-130,CONSTRUCTORA COLPATRIA  SAS,"Impacto Económico, Social y Comunitario",21.43
-131,CONSTRUCTORA COLPATRIA  SAS,Transparencia y Gobierno de la Sostenibilidad,76.19
-132,Celsia,Acción Climática y Energía,92.44
-133,Celsia,Capital Humano: Bienestar y Desarrollo,38.85
-134,Celsia,"Diversidad, Equidad e Inclusión (DEI)",66.19
-135,Celsia,Gestión de Recursos Naturales y Circularidad,47.05
-136,Celsia,"Impacto Económico, Social y Comunitario",77.45
-137,Celsia,Transparencia y Gobierno de la Sostenibilidad,117.65
-138,Cementos Argos,Acción Climática y Energía,105.26
-139,Cementos Argos,Capital Humano: Bienestar y Desarrollo,80.15
-140,Cementos Argos,"Diversidad, Equidad e Inclusión (DEI)",25.21
-141,Cementos Argos,Gestión de Recursos Naturales y Circularidad,123.76
-142,Cementos Argos,"Impacto Económico, Social y Comunitario",62.27
-143,Cementos Argos,Transparencia y Gobierno de la Sostenibilidad,78.95
-144,Cencosud,Acción Climática y Energía,52.94
-145,Cencosud,Capital Humano: Bienestar y Desarrollo,55.21
-146,Cencosud,"Diversidad, Equidad e Inclusión (DEI)",111.83
-147,Cencosud,Gestión de Recursos Naturales y Circularidad,0.0
-148,Cencosud,"Impacto Económico, Social y Comunitario",29.41
-149,Cencosud,Transparencia y Gobierno de la Sostenibilidad,94.12
-150,Cenit,Acción Climática y Energía,96.29
-151,Cenit,Capital Humano: Bienestar y Desarrollo,45.63
-152,Cenit,"Diversidad, Equidad e Inclusión (DEI)",98.75
-153,Cenit,Gestión de Recursos Naturales y Circularidad,38.24
-154,Cenit,"Impacto Económico, Social y Comunitario",62.97
-155,Cenit,Transparencia y Gobierno de la Sostenibilidad,117.65
-156,Cerrejón,Acción Climática y Energía,28.85
-157,Cerrejón,Capital Humano: Bienestar y Desarrollo,38.46
-158,Cerrejón,"Diversidad, Equidad e Inclusión (DEI)",15.52
-159,Cerrejón,Gestión de Recursos Naturales y Circularidad,85.83
-160,Cerrejón,"Impacto Económico, Social y Comunitario",75.38
-161,Cerrejón,Transparencia y Gobierno de la Sostenibilidad,61.54
-162,Chevron,Acción Climática y Energía,61.76
-163,Chevron,Capital Humano: Bienestar y Desarrollo,52.94
-164,Chevron,"Diversidad, Equidad e Inclusión (DEI)",23.53
-165,Chevron,Gestión de Recursos Naturales y Circularidad,17.65
-166,Chevron,"Impacto Económico, Social y Comunitario",11.76
-167,Chevron,Transparencia y Gobierno de la Sostenibilidad,23.53
-168,Claro,Acción Climática y Energía,97.12
-169,Claro,Capital Humano: Bienestar y Desarrollo,44.64
-170,Claro,"Diversidad, Equidad e Inclusión (DEI)",97.99
-171,Claro,Gestión de Recursos Naturales y Circularidad,26.44
-172,Claro,"Impacto Económico, Social y Comunitario",58.08
-173,Claro,Transparencia y Gobierno de la Sostenibilidad,147.06
-174,Coca Cola- Femsa,Acción Climática y Energía,151.73
-175,Coca Cola- Femsa,Capital Humano: Bienestar y Desarrollo,42.11
-176,Coca Cola- Femsa,"Diversidad, Equidad e Inclusión (DEI)",35.2
-177,Coca Cola- Femsa,Gestión de Recursos Naturales y Circularidad,94.74
-178,Coca Cola- Femsa,"Impacto Económico, Social y Comunitario",41.88
-179,Coca Cola- Femsa,Transparencia y Gobierno de la Sostenibilidad,78.95
-180,Colgate,Acción Climática y Energía,105.26
-181,Colgate,Capital Humano: Bienestar y Desarrollo,42.11
-182,Colgate,"Diversidad, Equidad e Inclusión (DEI)",7.89
-183,Colgate,Gestión de Recursos Naturales y Circularidad,63.16
-184,Colgate,"Impacto Económico, Social y Comunitario",15.79
-185,Colgate,Transparencia y Gobierno de la Sostenibilidad,78.95
-186,Colombina,Acción Climática y Energía,172.83
-187,Colombina,Capital Humano: Bienestar y Desarrollo,68.83
-188,Colombina,"Diversidad, Equidad e Inclusión (DEI)",43.48
-189,Colombina,Gestión de Recursos Naturales y Circularidad,94.59
-190,Colombina,"Impacto Económico, Social y Comunitario",60.66
-191,Colombina,Transparencia y Gobierno de la Sostenibilidad,78.95
-192,Compañía Nacional de Chocolates,Acción Climática y Energía,94.74
-193,Compañía Nacional de Chocolates,Capital Humano: Bienestar y Desarrollo,42.11
-194,Compañía Nacional de Chocolates,"Diversidad, Equidad e Inclusión (DEI)",27.8
-195,Compañía Nacional de Chocolates,Gestión de Recursos Naturales y Circularidad,47.37
-196,Compañía Nacional de Chocolates,"Impacto Económico, Social y Comunitario",10.53
-197,Compañía Nacional de Chocolates,Transparencia y Gobierno de la Sostenibilidad,47.37
-198,Conconcreto,Acción Climática y Energía,88.94
-199,Conconcreto,Capital Humano: Bienestar y Desarrollo,23.81
-200,Conconcreto,"Diversidad, Equidad e Inclusión (DEI)",16.28
-201,Conconcreto,Gestión de Recursos Naturales y Circularidad,52.56
-202,Conconcreto,"Impacto Económico, Social y Comunitario",14.29
-203,Conconcreto,Transparencia y Gobierno de la Sostenibilidad,95.24
-204,Corbeta,Acción Climática y Energía,52.94
-205,Corbeta,Capital Humano: Bienestar y Desarrollo,35.29
-206,Corbeta,"Diversidad, Equidad e Inclusión (DEI)",0.0
-207,Corbeta,Gestión de Recursos Naturales y Circularidad,5.88
-208,Corbeta,"Impacto Económico, Social y Comunitario",0.0
-209,Corbeta,Transparencia y Gobierno de la Sostenibilidad,0.0
-210,Cruz Verde,Acción Climática y Energía,131.15
-211,Cruz Verde,Capital Humano: Bienestar y Desarrollo,52.94
-212,Cruz Verde,"Diversidad, Equidad e Inclusión (DEI)",35.29
-213,Cruz Verde,Gestión de Recursos Naturales y Circularidad,26.3
-214,Cruz Verde,"Impacto Económico, Social y Comunitario",23.53
-215,Cruz Verde,Transparencia y Gobierno de la Sostenibilidad,117.65
-216,D1,Acción Climática y Energía,78.42
-217,D1,Capital Humano: Bienestar y Desarrollo,35.29
-218,D1,"Diversidad, Equidad e Inclusión (DEI)",88.02
-219,D1,Gestión de Recursos Naturales y Circularidad,19.53
-220,D1,"Impacto Económico, Social y Comunitario",52.58
-221,D1,Transparencia y Gobierno de la Sostenibilidad,117.65
-222,Davivienda,Acción Climática y Energía,81.75
-223,Davivienda,Capital Humano: Bienestar y Desarrollo,35.29
-224,Davivienda,"Diversidad, Equidad e Inclusión (DEI)",94.66
-225,Davivienda,Gestión de Recursos Naturales y Circularidad,41.18
-226,Davivienda,"Impacto Económico, Social y Comunitario",82.35
-227,Davivienda,Transparencia y Gobierno de la Sostenibilidad,147.06
-228,Distracom,Acción Climática y Energía,52.94
-229,Distracom,Capital Humano: Bienestar y Desarrollo,35.29
-230,Distracom,"Diversidad, Equidad e Inclusión (DEI)",0.0
-231,Distracom,Gestión de Recursos Naturales y Circularidad,5.88
-232,Distracom,"Impacto Económico, Social y Comunitario",0.0
-233,Distracom,Transparencia y Gobierno de la Sostenibilidad,0.0
-234,Drummond,Acción Climática y Energía,110.81
-235,Drummond,Capital Humano: Bienestar y Desarrollo,94.14
-236,Drummond,"Diversidad, Equidad e Inclusión (DEI)",15.98
-237,Drummond,Gestión de Recursos Naturales y Circularidad,114.34
-238,Drummond,"Impacto Económico, Social y Comunitario",141.73
-239,Drummond,Transparencia y Gobierno de la Sostenibilidad,76.92
-240,EPM,Acción Climática y Energía,81.22
-241,EPM,Capital Humano: Bienestar y Desarrollo,35.29
-242,EPM,"Diversidad, Equidad e Inclusión (DEI)",97.77
-243,EPM,Gestión de Recursos Naturales y Circularidad,24.84
-244,EPM,"Impacto Económico, Social y Comunitario",79.02
-245,EPM,Transparencia y Gobierno de la Sostenibilidad,117.65
-246,ES Windows,Acción Climática y Energía,63.16
-247,ES Windows,Capital Humano: Bienestar y Desarrollo,0.0
-248,ES Windows,"Diversidad, Equidad e Inclusión (DEI)",0.0
-249,ES Windows,Gestión de Recursos Naturales y Circularidad,15.79
-250,ES Windows,"Impacto Económico, Social y Comunitario",0.0
-251,ES Windows,Transparencia y Gobierno de la Sostenibilidad,15.79
-252,Ecopetrol,Acción Climática y Energía,96.15
-253,Ecopetrol,Capital Humano: Bienestar y Desarrollo,70.85
-254,Ecopetrol,"Diversidad, Equidad e Inclusión (DEI)",61.05
-255,Ecopetrol,Gestión de Recursos Naturales y Circularidad,114.15
-256,Ecopetrol,"Impacto Económico, Social y Comunitario",100.17
-257,Ecopetrol,Transparencia y Gobierno de la Sostenibilidad,76.92
-258,Emgesa,Acción Climática y Energía,100.3
-259,Emgesa,Capital Humano: Bienestar y Desarrollo,48.06
-260,Emgesa,"Diversidad, Equidad e Inclusión (DEI)",73.59
-261,Emgesa,Gestión de Recursos Naturales y Circularidad,38.24
-262,Emgesa,"Impacto Económico, Social y Comunitario",100.9
-263,Emgesa,Transparencia y Gobierno de la Sostenibilidad,147.06
-264,Esenttia,Acción Climática y Energía,174.71
-265,Esenttia,Capital Humano: Bienestar y Desarrollo,83.32
-266,Esenttia,"Diversidad, Equidad e Inclusión (DEI)",70.0
-267,Esenttia,Gestión de Recursos Naturales y Circularidad,94.73
-268,Esenttia,"Impacto Económico, Social y Comunitario",51.63
-269,Esenttia,Transparencia y Gobierno de la Sostenibilidad,78.95
-270,Falabella,Acción Climática y Energía,157.21
-271,Falabella,Capital Humano: Bienestar y Desarrollo,59.31
-272,Falabella,"Diversidad, Equidad e Inclusión (DEI)",109.21
-273,Falabella,Gestión de Recursos Naturales y Circularidad,17.38
-274,Falabella,"Impacto Económico, Social y Comunitario",41.18
-275,Falabella,Transparencia y Gobierno de la Sostenibilidad,94.12
-276,Frontera Energy,Acción Climática y Energía,138.67
-277,Frontera Energy,Capital Humano: Bienestar y Desarrollo,57.69
-278,Frontera Energy,"Diversidad, Equidad e Inclusión (DEI)",20.38
-279,Frontera Energy,Gestión de Recursos Naturales y Circularidad,124.67
-280,Frontera Energy,"Impacto Económico, Social y Comunitario",48.21
-281,Frontera Energy,Transparencia y Gobierno de la Sostenibilidad,61.54
-282,GEB,Acción Climática y Energía,92.08
-283,GEB,Capital Humano: Bienestar y Desarrollo,35.29
-284,GEB,"Diversidad, Equidad e Inclusión (DEI)",71.4
-285,GEB,Gestión de Recursos Naturales y Circularidad,46.93
-286,GEB,"Impacto Económico, Social y Comunitario",70.59
-287,GEB,Transparencia y Gobierno de la Sostenibilidad,117.65
-288,Gases del Caribe,Acción Climática y Energía,85.44
-289,Gases del Caribe,Capital Humano: Bienestar y Desarrollo,26.88
-290,Gases del Caribe,"Diversidad, Equidad e Inclusión (DEI)",17.46
-291,Gases del Caribe,Gestión de Recursos Naturales y Circularidad,23.53
-292,Gases del Caribe,"Impacto Económico, Social y Comunitario",29.41
-293,Gases del Caribe,Transparencia y Gobierno de la Sostenibilidad,117.65
-294,General Motors,Acción Climática y Energía,94.74
-295,General Motors,Capital Humano: Bienestar y Desarrollo,42.11
-296,General Motors,"Diversidad, Equidad e Inclusión (DEI)",16.78
-297,General Motors,Gestión de Recursos Naturales y Circularidad,86.84
-298,General Motors,"Impacto Económico, Social y Comunitario",26.32
-299,General Motors,Transparencia y Gobierno de la Sostenibilidad,63.16
-300,Geopark,Acción Climática y Energía,141.59
-301,Geopark,Capital Humano: Bienestar y Desarrollo,64.69
-302,Geopark,"Diversidad, Equidad e Inclusión (DEI)",41.78
-303,Geopark,Gestión de Recursos Naturales y Circularidad,115.31
-304,Geopark,"Impacto Económico, Social y Comunitario",92.31
-305,Geopark,Transparencia y Gobierno de la Sostenibilidad,76.92
-306,Gran Tierra Energy,Acción Climática y Energía,109.51
-307,Gran Tierra Energy,Capital Humano: Bienestar y Desarrollo,38.46
-308,Gran Tierra Energy,"Diversidad, Equidad e Inclusión (DEI)",14.2
-309,Gran Tierra Energy,Gestión de Recursos Naturales y Circularidad,95.35
-310,Gran Tierra Energy,"Impacto Económico, Social y Comunitario",76.92
-311,Gran Tierra Energy,Transparencia y Gobierno de la Sostenibilidad,30.77
-312,Grupo Bios,Acción Climática y Energía,19.05
-313,Grupo Bios,Capital Humano: Bienestar y Desarrollo,28.57
-314,Grupo Bios,"Diversidad, Equidad e Inclusión (DEI)",54.83
-315,Grupo Bios,Gestión de Recursos Naturales y Circularidad,0.0
-316,Grupo Bios,"Impacto Económico, Social y Comunitario",35.71
-317,Grupo Bios,Transparencia y Gobierno de la Sostenibilidad,42.86
-318,Grupo Diana,Acción Climática y Energía,63.16
-319,Grupo Diana,Capital Humano: Bienestar y Desarrollo,0.0
-320,Grupo Diana,"Diversidad, Equidad e Inclusión (DEI)",0.0
-321,Grupo Diana,Gestión de Recursos Naturales y Circularidad,15.79
-322,Grupo Diana,"Impacto Económico, Social y Comunitario",0.0
-323,Grupo Diana,Transparencia y Gobierno de la Sostenibilidad,0.0
-324,Haceb,Acción Climática y Energía,157.85
-325,Haceb,Capital Humano: Bienestar y Desarrollo,66.37
-326,Haceb,"Diversidad, Equidad e Inclusión (DEI)",17.62
-327,Haceb,Gestión de Recursos Naturales y Circularidad,86.81
-328,Haceb,"Impacto Económico, Social y Comunitario",42.49
-329,Haceb,Transparencia y Gobierno de la Sostenibilidad,63.16
-330,Hocol,Acción Climática y Energía,143.15
-331,Hocol,Capital Humano: Bienestar y Desarrollo,93.76
-332,Hocol,"Diversidad, Equidad e Inclusión (DEI)",21.77
-333,Hocol,Gestión de Recursos Naturales y Circularidad,132.91
-334,Hocol,"Impacto Económico, Social y Comunitario",38.46
-335,Hocol,Transparencia y Gobierno de la Sostenibilidad,61.54
-336,INCUBADORA SANTANDER S.A. (Huevos Kikes),Acción Climática y Energía,19.05
-337,INCUBADORA SANTANDER S.A. (Huevos Kikes),Capital Humano: Bienestar y Desarrollo,28.57
-338,INCUBADORA SANTANDER S.A. (Huevos Kikes),"Diversidad, Equidad e Inclusión (DEI)",0.0
-339,INCUBADORA SANTANDER S.A. (Huevos Kikes),Gestión de Recursos Naturales y Circularidad,23.81
-340,INCUBADORA SANTANDER S.A. (Huevos Kikes),"Impacto Económico, Social y Comunitario",0.0
-341,INCUBADORA SANTANDER S.A. (Huevos Kikes),Transparencia y Gobierno de la Sostenibilidad,0.0
-342,ISA,Acción Climática y Energía,115.41
-343,ISA,Capital Humano: Bienestar y Desarrollo,44.91
-344,ISA,"Diversidad, Equidad e Inclusión (DEI)",11.6
-345,ISA,Gestión de Recursos Naturales y Circularidad,35.27
-346,ISA,"Impacto Económico, Social y Comunitario",52.94
-347,ISA,Transparencia y Gobierno de la Sostenibilidad,147.06
-348,ISMOCOL SA,Acción Climática y Energía,42.86
-349,ISMOCOL SA,Capital Humano: Bienestar y Desarrollo,0.0
-350,ISMOCOL SA,"Diversidad, Equidad e Inclusión (DEI)",0.0
-351,ISMOCOL SA,Gestión de Recursos Naturales y Circularidad,14.29
-352,ISMOCOL SA,"Impacto Económico, Social y Comunitario",0.0
-353,ISMOCOL SA,Transparencia y Gobierno de la Sostenibilidad,0.0
-354,Isagen,Acción Climática y Energía,64.45
-355,Isagen,Capital Humano: Bienestar y Desarrollo,35.29
-356,Isagen,"Diversidad, Equidad e Inclusión (DEI)",0.28
-357,Isagen,Gestión de Recursos Naturales y Circularidad,35.29
-358,Isagen,"Impacto Económico, Social y Comunitario",46.69
-359,Isagen,Transparencia y Gobierno de la Sostenibilidad,88.24
-360,Italcol,Acción Climática y Energía,63.16
-361,Italcol,Capital Humano: Bienestar y Desarrollo,0.0
-362,Italcol,"Diversidad, Equidad e Inclusión (DEI)",0.0
-363,Italcol,Gestión de Recursos Naturales y Circularidad,15.79
-364,Italcol,"Impacto Económico, Social y Comunitario",0.0
-365,Italcol,Transparencia y Gobierno de la Sostenibilidad,0.0
-366,LATAM,Acción Climática y Energía,58.79
-367,LATAM,Capital Humano: Bienestar y Desarrollo,35.29
-368,LATAM,"Diversidad, Equidad e Inclusión (DEI)",56.28
-369,LATAM,Gestión de Recursos Naturales y Circularidad,41.17
-370,LATAM,"Impacto Económico, Social y Comunitario",52.94
-371,LATAM,Transparencia y Gobierno de la Sostenibilidad,147.06
-372,MARVAL S.A.S.,Acción Climática y Energía,57.14
-373,MARVAL S.A.S.,Capital Humano: Bienestar y Desarrollo,23.81
-374,MARVAL S.A.S.,"Diversidad, Equidad e Inclusión (DEI)",11.7
-375,MARVAL S.A.S.,Gestión de Recursos Naturales y Circularidad,42.16
-376,MARVAL S.A.S.,"Impacto Económico, Social y Comunitario",35.71
-377,MARVAL S.A.S.,Transparencia y Gobierno de la Sostenibilidad,76.19
-378,Mazda,Acción Climática y Energía,88.24
-379,Mazda,Capital Humano: Bienestar y Desarrollo,17.65
-380,Mazda,"Diversidad, Equidad e Inclusión (DEI)",30.12
-381,Mazda,Gestión de Recursos Naturales y Circularidad,17.65
-382,Mazda,"Impacto Económico, Social y Comunitario",23.53
-383,Mazda,Transparencia y Gobierno de la Sostenibilidad,117.65
-384,Mercado Libre,Acción Climática y Energía,94.1
-385,Mercado Libre,Capital Humano: Bienestar y Desarrollo,35.29
-386,Mercado Libre,"Diversidad, Equidad e Inclusión (DEI)",0.0
-387,Mercado Libre,Gestión de Recursos Naturales y Circularidad,20.59
-388,Mercado Libre,"Impacto Económico, Social y Comunitario",52.82
-389,Mercado Libre,Transparencia y Gobierno de la Sostenibilidad,117.65
-390,Nestle,Acción Climática y Energía,73.68
-391,Nestle,Capital Humano: Bienestar y Desarrollo,42.11
-392,Nestle,"Diversidad, Equidad e Inclusión (DEI)",37.22
-393,Nestle,Gestión de Recursos Naturales y Circularidad,39.47
-394,Nestle,"Impacto Económico, Social y Comunitario",31.58
-395,Nestle,Transparencia y Gobierno de la Sostenibilidad,63.16
-396,Oleoducto Central (Ocensa),Acción Climática y Energía,99.75
-397,Oleoducto Central (Ocensa),Capital Humano: Bienestar y Desarrollo,35.29
-398,Oleoducto Central (Ocensa),"Diversidad, Equidad e Inclusión (DEI)",44.12
-399,Oleoducto Central (Ocensa),Gestión de Recursos Naturales y Circularidad,44.12
-400,Oleoducto Central (Ocensa),"Impacto Económico, Social y Comunitario",64.71
-401,Oleoducto Central (Ocensa),Transparencia y Gobierno de la Sostenibilidad,117.65
-402,Olímpica,Acción Climática y Energía,52.94
-403,Olímpica,Capital Humano: Bienestar y Desarrollo,35.29
-404,Olímpica,"Diversidad, Equidad e Inclusión (DEI)",0.0
-405,Olímpica,Gestión de Recursos Naturales y Circularidad,5.88
-406,Olímpica,"Impacto Económico, Social y Comunitario",0.0
-407,Olímpica,Transparencia y Gobierno de la Sostenibilidad,23.53
-408,POLLOS EL BUCANERO S.A. (Cargill),Acción Climática y Energía,63.16
-409,POLLOS EL BUCANERO S.A. (Cargill),Capital Humano: Bienestar y Desarrollo,0.0
-410,POLLOS EL BUCANERO S.A. (Cargill),"Diversidad, Equidad e Inclusión (DEI)",0.0
-411,POLLOS EL BUCANERO S.A. (Cargill),Gestión de Recursos Naturales y Circularidad,15.79
-412,POLLOS EL BUCANERO S.A. (Cargill),"Impacto Económico, Social y Comunitario",0.0
-413,POLLOS EL BUCANERO S.A. (Cargill),Transparencia y Gobierno de la Sostenibilidad,0.0
-414,Pepsico,Acción Climática y Energía,115.79
-415,Pepsico,Capital Humano: Bienestar y Desarrollo,42.11
-416,Pepsico,"Diversidad, Equidad e Inclusión (DEI)",7.89
-417,Pepsico,Gestión de Recursos Naturales y Circularidad,78.95
-418,Pepsico,"Impacto Económico, Social y Comunitario",10.53
-419,Pepsico,Transparencia y Gobierno de la Sostenibilidad,47.37
-420,Petromil,Acción Climática y Energía,52.94
-421,Petromil,Capital Humano: Bienestar y Desarrollo,35.29
-422,Petromil,"Diversidad, Equidad e Inclusión (DEI)",0.0
-423,Petromil,Gestión de Recursos Naturales y Circularidad,5.88
-424,Petromil,"Impacto Económico, Social y Comunitario",0.0
-425,Petromil,Transparencia y Gobierno de la Sostenibilidad,0.0
-426,Postobón,Acción Climática y Energía,198.23
-427,Postobón,Capital Humano: Bienestar y Desarrollo,42.11
-428,Postobón,"Diversidad, Equidad e Inclusión (DEI)",37.08
-429,Postobón,Gestión de Recursos Naturales y Circularidad,110.15
-430,Postobón,"Impacto Económico, Social y Comunitario",92.44
-431,Postobón,Transparencia y Gobierno de la Sostenibilidad,78.95
-432,Pricesmart,Acción Climática y Energía,105.78
-433,Pricesmart,Capital Humano: Bienestar y Desarrollo,17.65
-434,Pricesmart,"Diversidad, Equidad e Inclusión (DEI)",12.71
-435,Pricesmart,Gestión de Recursos Naturales y Circularidad,6.53
-436,Pricesmart,"Impacto Económico, Social y Comunitario",5.88
-437,Pricesmart,Transparencia y Gobierno de la Sostenibilidad,94.12
-438,Primax,Acción Climática y Energía,167.41
-439,Primax,Capital Humano: Bienestar y Desarrollo,52.94
-440,Primax,"Diversidad, Equidad e Inclusión (DEI)",11.11
-441,Primax,Gestión de Recursos Naturales y Circularidad,26.45
-442,Primax,"Impacto Económico, Social y Comunitario",105.88
-443,Primax,Transparencia y Gobierno de la Sostenibilidad,117.65
-444,Productos Familia (Essity),Acción Climática y Energía,126.32
-445,Productos Familia (Essity),Capital Humano: Bienestar y Desarrollo,42.11
-446,Productos Familia (Essity),"Diversidad, Equidad e Inclusión (DEI)",48.56
-447,Productos Familia (Essity),Gestión de Recursos Naturales y Circularidad,110.53
-448,Productos Familia (Essity),"Impacto Económico, Social y Comunitario",31.58
-449,Productos Familia (Essity),Transparencia y Gobierno de la Sostenibilidad,63.16
-450,Promigas,Acción Climática y Energía,98.6
-451,Promigas,Capital Humano: Bienestar y Desarrollo,38.39
-452,Promigas,"Diversidad, Equidad e Inclusión (DEI)",75.63
-453,Promigas,Gestión de Recursos Naturales y Circularidad,35.29
-454,Promigas,"Impacto Económico, Social y Comunitario",70.56
-455,Promigas,Transparencia y Gobierno de la Sostenibilidad,147.06
-456,Rappi,Acción Climática y Energía,35.29
-457,Rappi,Capital Humano: Bienestar y Desarrollo,23.53
-458,Rappi,"Diversidad, Equidad e Inclusión (DEI)",0.0
-459,Rappi,Gestión de Recursos Naturales y Circularidad,5.88
-460,Rappi,"Impacto Económico, Social y Comunitario",0.0
-461,Rappi,Transparencia y Gobierno de la Sostenibilidad,0.0
-462,Reficar,Acción Climática y Energía,52.63
-463,Reficar,Capital Humano: Bienestar y Desarrollo,79.67
-464,Reficar,"Diversidad, Equidad e Inclusión (DEI)",34.12
-465,Reficar,Gestión de Recursos Naturales y Circularidad,70.45
-466,Reficar,"Impacto Económico, Social y Comunitario",41.55
-467,Reficar,Transparencia y Gobierno de la Sostenibilidad,78.95
-468,Renault,Acción Climática y Energía,136.51
-469,Renault,Capital Humano: Bienestar y Desarrollo,58.59
-470,Renault,"Diversidad, Equidad e Inclusión (DEI)",31.58
-471,Renault,Gestión de Recursos Naturales y Circularidad,78.9
-472,Renault,"Impacto Económico, Social y Comunitario",21.05
-473,Renault,Transparencia y Gobierno de la Sostenibilidad,63.16
-474,Riopaila Castilla,Acción Climática y Energía,175.13
-475,Riopaila Castilla,Capital Humano: Bienestar y Desarrollo,65.49
-476,Riopaila Castilla,"Diversidad, Equidad e Inclusión (DEI)",13.79
-477,Riopaila Castilla,Gestión de Recursos Naturales y Circularidad,93.89
-478,Riopaila Castilla,"Impacto Económico, Social y Comunitario",42.11
-479,Riopaila Castilla,Transparencia y Gobierno de la Sostenibilidad,63.16
-480,Samsung,Acción Climática y Energía,88.24
-481,Samsung,Capital Humano: Bienestar y Desarrollo,52.94
-482,Samsung,"Diversidad, Equidad e Inclusión (DEI)",39.06
-483,Samsung,Gestión de Recursos Naturales y Circularidad,29.41
-484,Samsung,"Impacto Económico, Social y Comunitario",41.18
-485,Samsung,Transparencia y Gobierno de la Sostenibilidad,117.65
-486,SierraCol Energy,Acción Climática y Energía,167.62
-487,SierraCol Energy,Capital Humano: Bienestar y Desarrollo,57.69
-488,SierraCol Energy,"Diversidad, Equidad e Inclusión (DEI)",34.09
-489,SierraCol Energy,Gestión de Recursos Naturales y Circularidad,134.14
-490,SierraCol Energy,"Impacto Económico, Social y Comunitario",38.12
-491,SierraCol Energy,Transparencia y Gobierno de la Sostenibilidad,61.54
-492,Sodimac (Homecenter),Acción Climática y Energía,128.52
-493,Sodimac (Homecenter),Capital Humano: Bienestar y Desarrollo,58.04
-494,Sodimac (Homecenter),"Diversidad, Equidad e Inclusión (DEI)",77.73
-495,Sodimac (Homecenter),Gestión de Recursos Naturales y Circularidad,29.18
-496,Sodimac (Homecenter),"Impacto Económico, Social y Comunitario",63.99
-497,Sodimac (Homecenter),Transparencia y Gobierno de la Sostenibilidad,117.65
-498,Sucafina,Acción Climática y Energía,79.41
-499,Sucafina,Capital Humano: Bienestar y Desarrollo,35.29
-500,Sucafina,"Diversidad, Equidad e Inclusión (DEI)",17.65
-501,Sucafina,Gestión de Recursos Naturales y Circularidad,26.47
-502,Sucafina,"Impacto Económico, Social y Comunitario",23.53
-503,Sucafina,Transparencia y Gobierno de la Sostenibilidad,94.12
-504,Sunshine Bouquet,Acción Climática y Energía,19.05
-505,Sunshine Bouquet,Capital Humano: Bienestar y Desarrollo,28.57
-506,Sunshine Bouquet,"Diversidad, Equidad e Inclusión (DEI)",0.0
-507,Sunshine Bouquet,Gestión de Recursos Naturales y Circularidad,23.81
-508,Sunshine Bouquet,"Impacto Económico, Social y Comunitario",0.0
-509,Sunshine Bouquet,Transparencia y Gobierno de la Sostenibilidad,14.29
-510,Suramerica Comercial (Dollar City),Acción Climática y Energía,52.94
-511,Suramerica Comercial (Dollar City),Capital Humano: Bienestar y Desarrollo,35.29
-512,Suramerica Comercial (Dollar City),"Diversidad, Equidad e Inclusión (DEI)",0.0
-513,Suramerica Comercial (Dollar City),Gestión de Recursos Naturales y Circularidad,5.88
-514,Suramerica Comercial (Dollar City),"Impacto Económico, Social y Comunitario",0.0
-515,Suramerica Comercial (Dollar City),Transparencia y Gobierno de la Sostenibilidad,0.0
-516,Tecnoquimicas,Acción Climática y Energía,52.94
-517,Tecnoquimicas,Capital Humano: Bienestar y Desarrollo,35.29
-518,Tecnoquimicas,"Diversidad, Equidad e Inclusión (DEI)",0.0
-519,Tecnoquimicas,Gestión de Recursos Naturales y Circularidad,5.88
-520,Tecnoquimicas,"Impacto Económico, Social y Comunitario",0.0
-521,Tecnoquimicas,Transparencia y Gobierno de la Sostenibilidad,0.0
-522,Telefónica,Acción Climática y Energía,87.57
-523,Telefónica,Capital Humano: Bienestar y Desarrollo,38.39
-524,Telefónica,"Diversidad, Equidad e Inclusión (DEI)",91.79
-525,Telefónica,Gestión de Recursos Naturales y Circularidad,35.29
-526,Telefónica,"Impacto Económico, Social y Comunitario",56.13
-527,Telefónica,Transparencia y Gobierno de la Sostenibilidad,147.06
-528,Teleperformance,Acción Climática y Energía,99.64
-529,Teleperformance,Capital Humano: Bienestar y Desarrollo,35.29
-530,Teleperformance,"Diversidad, Equidad e Inclusión (DEI)",84.25
-531,Teleperformance,Gestión de Recursos Naturales y Circularidad,26.47
-532,Teleperformance,"Impacto Económico, Social y Comunitario",52.33
-533,Teleperformance,Transparencia y Gobierno de la Sostenibilidad,117.65
-534,Terpel,Acción Climática y Energía,108.82
-535,Terpel,Capital Humano: Bienestar y Desarrollo,64.99
-536,Terpel,"Diversidad, Equidad e Inclusión (DEI)",89.81
-537,Terpel,Gestión de Recursos Naturales y Circularidad,38.84
-538,Terpel,"Impacto Económico, Social y Comunitario",76.11
-539,Terpel,Transparencia y Gobierno de la Sostenibilidad,117.65
-540,Tigo,Acción Climática y Energía,91.57
-541,Tigo,Capital Humano: Bienestar y Desarrollo,46.9
-542,Tigo,"Diversidad, Equidad e Inclusión (DEI)",29.52
-543,Tigo,Gestión de Recursos Naturales y Circularidad,17.65
-544,Tigo,"Impacto Económico, Social y Comunitario",33.09
-545,Tigo,Transparencia y Gobierno de la Sostenibilidad,117.65
-546,Toyota,Acción Climática y Energía,139.63
-547,Toyota,Capital Humano: Bienestar y Desarrollo,88.24
-548,Toyota,"Diversidad, Equidad e Inclusión (DEI)",35.56
-549,Toyota,Gestión de Recursos Naturales y Circularidad,5.88
-550,Toyota,"Impacto Económico, Social y Comunitario",19.68
-551,Toyota,Transparencia y Gobierno de la Sostenibilidad,94.12
-552,Trafigura (Petroleum),Acción Climática y Energía,61.76
-553,Trafigura (Petroleum),Capital Humano: Bienestar y Desarrollo,52.94
-554,Trafigura (Petroleum),"Diversidad, Equidad e Inclusión (DEI)",0.0
-555,Trafigura (Petroleum),Gestión de Recursos Naturales y Circularidad,26.47
-556,Trafigura (Petroleum),"Impacto Económico, Social y Comunitario",23.53
-557,Trafigura (Petroleum),Transparencia y Gobierno de la Sostenibilidad,94.12
-558,Uniban,Acción Climática y Energía,121.52
-559,Uniban,Capital Humano: Bienestar y Desarrollo,35.29
-560,Uniban,"Diversidad, Equidad e Inclusión (DEI)",19.45
-561,Uniban,Gestión de Recursos Naturales y Circularidad,22.62
-562,Uniban,"Impacto Económico, Social y Comunitario",40.81
-563,Uniban,Transparencia y Gobierno de la Sostenibilidad,94.12
-564,Unilever,Acción Climática y Energía,52.94
-565,Unilever,Capital Humano: Bienestar y Desarrollo,35.29
-566,Unilever,"Diversidad, Equidad e Inclusión (DEI)",0.0
-567,Unilever,Gestión de Recursos Naturales y Circularidad,5.88
-568,Unilever,"Impacto Económico, Social y Comunitario",0.0
-569,Unilever,Transparencia y Gobierno de la Sostenibilidad,0.0
-570,Vanti,Acción Climática y Energía,64.16
-571,Vanti,Capital Humano: Bienestar y Desarrollo,35.29
-572,Vanti,"Diversidad, Equidad e Inclusión (DEI)",37.79
-573,Vanti,Gestión de Recursos Naturales y Circularidad,17.64
-574,Vanti,"Impacto Económico, Social y Comunitario",51.73
-575,Vanti,Transparencia y Gobierno de la Sostenibilidad,147.06
-576,Verano energy,Acción Climática y Energía,57.69
-577,Verano energy,Capital Humano: Bienestar y Desarrollo,38.46
-578,Verano energy,"Diversidad, Equidad e Inclusión (DEI)",0.0
-579,Verano energy,Gestión de Recursos Naturales y Circularidad,19.23
-580,Verano energy,"Impacto Económico, Social y Comunitario",0.0
-581,Verano energy,Transparencia y Gobierno de la Sostenibilidad,0.0
-582,YARA COLOMBIA S.A.,Acción Climática y Energía,126.32
-583,YARA COLOMBIA S.A.,Capital Humano: Bienestar y Desarrollo,4.38
-584,YARA COLOMBIA S.A.,"Diversidad, Equidad e Inclusión (DEI)",15.79
-585,YARA COLOMBIA S.A.,Gestión de Recursos Naturales y Circularidad,63.16
-586,YARA COLOMBIA S.A.,"Impacto Económico, Social y Comunitario",21.05
-587,YARA COLOMBIA S.A.,Transparencia y Gobierno de la Sostenibilidad,63.16
-588,Yamaha,Acción Climática y Energía,63.16
-589,Yamaha,Capital Humano: Bienestar y Desarrollo,42.11
-590,Yamaha,"Diversidad, Equidad e Inclusión (DEI)",0.0
-591,Yamaha,Gestión de Recursos Naturales y Circularidad,31.58
-592,Yamaha,"Impacto Económico, Social y Comunitario",10.53
-593,Yamaha,Transparencia y Gobierno de la Sostenibilidad,31.58
-594,Éxito,Acción Climática y Energía,122.72
-595,Éxito,Capital Humano: Bienestar y Desarrollo,52.94
-596,Éxito,"Diversidad, Equidad e Inclusión (DEI)",76.17
-597,Éxito,Gestión de Recursos Naturales y Circularidad,27.36
-598,Éxito,"Impacto Económico, Social y Comunitario",35.29
-599,Éxito,Transparencia y Gobierno de la Sostenibilidad,94.12
+[
+    {
+        "empresa":"ARA",
+        "pilar":"Acción Climática y Energía",
+        "value":52.94117646
+    },
+    {
+        "empresa":"ARA",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"ARA",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"ARA",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"ARA",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"ARA",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"ARQUITECTURA Y CONCRETO",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":0.0
+    },
+    {
+        "empresa":"ARQUITECTURA Y CONCRETO",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":14.28571429
+    },
+    {
+        "empresa":"ARQUITECTURA Y CONCRETO",
+        "pilar":"Acción Climática y Energía",
+        "value":42.85714287
+    },
+    {
+        "empresa":"ARQUITECTURA Y CONCRETO",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"ARQUITECTURA Y CONCRETO",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":7.142857143
+    },
+    {
+        "empresa":"ARQUITECTURA Y CONCRETO",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"AUTOPISTA RIO MAGDALENA SAS",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":79.019960492
+    },
+    {
+        "empresa":"AUTOPISTA RIO MAGDALENA SAS",
+        "pilar":"Acción Climática y Energía",
+        "value":101.005692443
+    },
+    {
+        "empresa":"AUTOPISTA RIO MAGDALENA SAS",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":64.285714303
+    },
+    {
+        "empresa":"AUTOPISTA RIO MAGDALENA SAS",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":23.551020413
+    },
+    {
+        "empresa":"AUTOPISTA RIO MAGDALENA SAS",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":95.23809524
+    },
+    {
+        "empresa":"AUTOPISTA RIO MAGDALENA SAS",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":95.23809525
+    },
+    {
+        "empresa":"AVICOLA EL MADROÑO SA",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":28.57142858
+    },
+    {
+        "empresa":"AVICOLA EL MADROÑO SA",
+        "pilar":"Acción Climática y Energía",
+        "value":19.04761905
+    },
+    {
+        "empresa":"AVICOLA EL MADROÑO SA",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"AVICOLA EL MADROÑO SA",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"AVICOLA EL MADROÑO SA",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":23.80952381
+    },
+    {
+        "empresa":"AVICOLA EL MADROÑO SA",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"AVSA",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":14.28571429
+    },
+    {
+        "empresa":"AVSA",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"AVSA",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":14.28571429
+    },
+    {
+        "empresa":"AVSA",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":0.0
+    },
+    {
+        "empresa":"AVSA",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":14.28571429
+    },
+    {
+        "empresa":"AVSA",
+        "pilar":"Acción Climática y Energía",
+        "value":19.04761905
+    },
+    {
+        "empresa":"Aliar",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":71.42857145
+    },
+    {
+        "empresa":"Aliar",
+        "pilar":"Acción Climática y Energía",
+        "value":85.714285724
+    },
+    {
+        "empresa":"Aliar",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":21.428571433
+    },
+    {
+        "empresa":"Aliar",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":28.57142858
+    },
+    {
+        "empresa":"Aliar",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":95.23809523
+    },
+    {
+        "empresa":"Aliar",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.85714287
+    },
+    {
+        "empresa":"Alimentos Carnicos (Grupo Nutresa)",
+        "pilar":"Acción Climática y Energía",
+        "value":172.145742535
+    },
+    {
+        "empresa":"Alimentos Carnicos (Grupo Nutresa)",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":77.285318563
+    },
+    {
+        "empresa":"Alimentos Carnicos (Grupo Nutresa)",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":56.66328799
+    },
+    {
+        "empresa":"Alimentos Carnicos (Grupo Nutresa)",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":63.15789472
+    },
+    {
+        "empresa":"Alimentos Carnicos (Grupo Nutresa)",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":118.257789722
+    },
+    {
+        "empresa":"Alimentos Carnicos (Grupo Nutresa)",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.10526316
+    },
+    {
+        "empresa":"Alpina",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":36.398891965
+    },
+    {
+        "empresa":"Alpina",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.10526316
+    },
+    {
+        "empresa":"Alpina",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":102.256839062
+    },
+    {
+        "empresa":"Alpina",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":11.925500371
+    },
+    {
+        "empresa":"Alpina",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":47.36842104
+    },
+    {
+        "empresa":"Alpina",
+        "pilar":"Acción Climática y Energía",
+        "value":194.84012146
+    },
+    {
+        "empresa":"Amarilo",
+        "pilar":"Acción Climática y Energía",
+        "value":77.573082845
+    },
+    {
+        "empresa":"Amarilo",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":73.48007115
+    },
+    {
+        "empresa":"Amarilo",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":85.422205475
+    },
+    {
+        "empresa":"Amarilo",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":29.000000004
+    },
+    {
+        "empresa":"Amarilo",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":95.23809525
+    },
+    {
+        "empresa":"Amarilo",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":46.054421773
+    },
+    {
+        "empresa":"Avianca",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":32.107843132
+    },
+    {
+        "empresa":"Avianca",
+        "pilar":"Acción Climática y Energía",
+        "value":64.355335261
+    },
+    {
+        "empresa":"Avianca",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":41.176025821
+    },
+    {
+        "empresa":"Avianca",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.64705884
+    },
+    {
+        "empresa":"Avianca",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":48.759311696
+    },
+    {
+        "empresa":"Avianca",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":46.99668725
+    },
+    {
+        "empresa":"BEL STAR S.A.",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":63.15789472
+    },
+    {
+        "empresa":"BEL STAR S.A.",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":55.261476492
+    },
+    {
+        "empresa":"BEL STAR S.A.",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":21.05263158
+    },
+    {
+        "empresa":"BEL STAR S.A.",
+        "pilar":"Acción Climática y Energía",
+        "value":105.25962634
+    },
+    {
+        "empresa":"BEL STAR S.A.",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":15.789473685
+    },
+    {
+        "empresa":"BEL STAR S.A.",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":31.57894736
+    },
+    {
+        "empresa":"Banco de Bogotá",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":32.352850123
+    },
+    {
+        "empresa":"Banco de Bogotá",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":47.05882352
+    },
+    {
+        "empresa":"Banco de Bogotá",
+        "pilar":"Acción Climática y Energía",
+        "value":105.4964634
+    },
+    {
+        "empresa":"Banco de Bogotá",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":70.58837522
+    },
+    {
+        "empresa":"Banco de Bogotá",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":147.05882355
+    },
+    {
+        "empresa":"Banco de Bogotá",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":103.840721937
+    },
+    {
+        "empresa":"Bancolombia",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":41.176470581
+    },
+    {
+        "empresa":"Bancolombia",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":38.189530779
+    },
+    {
+        "empresa":"Bancolombia",
+        "pilar":"Acción Climática y Energía",
+        "value":92.68748302
+    },
+    {
+        "empresa":"Bancolombia",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":147.05882355
+    },
+    {
+        "empresa":"Bancolombia",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":20.587805163
+    },
+    {
+        "empresa":"Bancolombia",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":29.15376677
+    },
+    {
+        "empresa":"Bavaria (Kopps)",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":31.578947364
+    },
+    {
+        "empresa":"Bavaria (Kopps)",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":0.0
+    },
+    {
+        "empresa":"Bavaria (Kopps)",
+        "pilar":"Acción Climática y Energía",
+        "value":130.00660014
+    },
+    {
+        "empresa":"Bavaria (Kopps)",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":10.52631579
+    },
+    {
+        "empresa":"Bavaria (Kopps)",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":31.57894736
+    },
+    {
+        "empresa":"Bavaria (Kopps)",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":15.950704226
+    },
+    {
+        "empresa":"Biomax",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Biomax",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Biomax",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Biomax",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"Biomax",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Biomax",
+        "pilar":"Acción Climática y Energía",
+        "value":52.94117646
+    },
+    {
+        "empresa":"C.I Prodeco",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":0.0
+    },
+    {
+        "empresa":"C.I Prodeco",
+        "pilar":"Acción Climática y Energía",
+        "value":0.0
+    },
+    {
+        "empresa":"C.I Prodeco",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"C.I Prodeco",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":19.23076923
+    },
+    {
+        "empresa":"C.I Prodeco",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":15.38461538
+    },
+    {
+        "empresa":"C.I Prodeco",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":15.38461538
+    },
+    {
+        "empresa":"CARTON DE COLOMBIA S.A. (Smurfit Kappa)",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":47.368421055
+    },
+    {
+        "empresa":"CARTON DE COLOMBIA S.A. (Smurfit Kappa)",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":20.98498888
+    },
+    {
+        "empresa":"CARTON DE COLOMBIA S.A. (Smurfit Kappa)",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":78.9473684
+    },
+    {
+        "empresa":"CARTON DE COLOMBIA S.A. (Smurfit Kappa)",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":61.883636851
+    },
+    {
+        "empresa":"CARTON DE COLOMBIA S.A. (Smurfit Kappa)",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":78.9473684
+    },
+    {
+        "empresa":"CARTON DE COLOMBIA S.A. (Smurfit Kappa)",
+        "pilar":"Acción Climática y Energía",
+        "value":105.2631579
+    },
+    {
+        "empresa":"CI Eslop",
+        "pilar":"Acción Climática y Energía",
+        "value":52.94117646
+    },
+    {
+        "empresa":"CI Eslop",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"CI Eslop",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"CI Eslop",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"CI Eslop",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"CI Eslop",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"CONCESIONARIA VIAL UNIÓN DEL SUR SAS",
+        "pilar":"Acción Climática y Energía",
+        "value":54.65009792
+    },
+    {
+        "empresa":"CONCESIONARIA VIAL UNIÓN DEL SUR SAS",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":42.71428572
+    },
+    {
+        "empresa":"CONCESIONARIA VIAL UNIÓN DEL SUR SAS",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":9.523809524
+    },
+    {
+        "empresa":"CONCESIONARIA VIAL UNIÓN DEL SUR SAS",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":76.1904762
+    },
+    {
+        "empresa":"CONCESIONARIA VIAL UNIÓN DEL SUR SAS",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":70.96156472
+    },
+    {
+        "empresa":"CONCESIONARIA VIAL UNIÓN DEL SUR SAS",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":23.80952381
+    },
+    {
+        "empresa":"CONSTRUCCIONES EL CONDOR S.A",
+        "pilar":"Acción Climática y Energía",
+        "value":0.0
+    },
+    {
+        "empresa":"CONSTRUCCIONES EL CONDOR S.A",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":13.615922044
+    },
+    {
+        "empresa":"CONSTRUCCIONES EL CONDOR S.A",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":76.1904762
+    },
+    {
+        "empresa":"CONSTRUCCIONES EL CONDOR S.A",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":47.61904762
+    },
+    {
+        "empresa":"CONSTRUCCIONES EL CONDOR S.A",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":28.57142858
+    },
+    {
+        "empresa":"CONSTRUCCIONES EL CONDOR S.A",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":21.428571433
+    },
+    {
+        "empresa":"CONSTRUCTORA CAPITAL BOGOTA SAS",
+        "pilar":"Acción Climática y Energía",
+        "value":28.877698071
+    },
+    {
+        "empresa":"CONSTRUCTORA CAPITAL BOGOTA SAS",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"CONSTRUCTORA CAPITAL BOGOTA SAS",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":21.428571433
+    },
+    {
+        "empresa":"CONSTRUCTORA CAPITAL BOGOTA SAS",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":17.011494698
+    },
+    {
+        "empresa":"CONSTRUCTORA CAPITAL BOGOTA SAS",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":76.1904762
+    },
+    {
+        "empresa":"CONSTRUCTORA CAPITAL BOGOTA SAS",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":0.0
+    },
+    {
+        "empresa":"CONSTRUCTORA COLPATRIA  SAS",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":26.77309192
+    },
+    {
+        "empresa":"CONSTRUCTORA COLPATRIA  SAS",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":47.61904762
+    },
+    {
+        "empresa":"CONSTRUCTORA COLPATRIA  SAS",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":28.57142858
+    },
+    {
+        "empresa":"CONSTRUCTORA COLPATRIA  SAS",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":21.428571433
+    },
+    {
+        "empresa":"CONSTRUCTORA COLPATRIA  SAS",
+        "pilar":"Acción Climática y Energía",
+        "value":14.28571429
+    },
+    {
+        "empresa":"CONSTRUCTORA COLPATRIA  SAS",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":76.1904762
+    },
+    {
+        "empresa":"Celsia",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":38.852009183
+    },
+    {
+        "empresa":"Celsia",
+        "pilar":"Acción Climática y Energía",
+        "value":92.443493301
+    },
+    {
+        "empresa":"Celsia",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":77.454885303
+    },
+    {
+        "empresa":"Celsia",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":47.053703842
+    },
+    {
+        "empresa":"Celsia",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":66.191950473
+    },
+    {
+        "empresa":"Celsia",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.64705884
+    },
+    {
+        "empresa":"Cementos Argos",
+        "pilar":"Acción Climática y Energía",
+        "value":105.2631579
+    },
+    {
+        "empresa":"Cementos Argos",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":123.75712563
+    },
+    {
+        "empresa":"Cementos Argos",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":62.271468147
+    },
+    {
+        "empresa":"Cementos Argos",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":80.1492823
+    },
+    {
+        "empresa":"Cementos Argos",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":78.9473684
+    },
+    {
+        "empresa":"Cementos Argos",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":25.208867675
+    },
+    {
+        "empresa":"Cencosud",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Cencosud",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":55.209361809
+    },
+    {
+        "empresa":"Cencosud",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":111.8348813
+    },
+    {
+        "empresa":"Cencosud",
+        "pilar":"Acción Climática y Energía",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Cencosud",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":94.11764704
+    },
+    {
+        "empresa":"Cencosud",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":29.411764701
+    },
+    {
+        "empresa":"Cenit",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":98.752605964
+    },
+    {
+        "empresa":"Cenit",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.64705884
+    },
+    {
+        "empresa":"Cenit",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":45.628173732
+    },
+    {
+        "empresa":"Cenit",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":62.970573515
+    },
+    {
+        "empresa":"Cenit",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":38.235257835
+    },
+    {
+        "empresa":"Cenit",
+        "pilar":"Acción Climática y Energía",
+        "value":96.289828681
+    },
+    {
+        "empresa":"Cerrejón",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":15.524475524
+    },
+    {
+        "empresa":"Cerrejón",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":38.46153846
+    },
+    {
+        "empresa":"Cerrejón",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":75.38461537
+    },
+    {
+        "empresa":"Cerrejón",
+        "pilar":"Acción Climática y Energía",
+        "value":28.846153845
+    },
+    {
+        "empresa":"Cerrejón",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":85.825359185
+    },
+    {
+        "empresa":"Cerrejón",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":61.53846152
+    },
+    {
+        "empresa":"Chevron",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":23.52941176
+    },
+    {
+        "empresa":"Chevron",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":11.76470588
+    },
+    {
+        "empresa":"Chevron",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":17.647058823
+    },
+    {
+        "empresa":"Chevron",
+        "pilar":"Acción Climática y Energía",
+        "value":61.764705872
+    },
+    {
+        "empresa":"Chevron",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":23.52941176
+    },
+    {
+        "empresa":"Chevron",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Claro",
+        "pilar":"Acción Climática y Energía",
+        "value":97.116520471
+    },
+    {
+        "empresa":"Claro",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":97.992942927
+    },
+    {
+        "empresa":"Claro",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":26.437574131
+    },
+    {
+        "empresa":"Claro",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":58.084071248
+    },
+    {
+        "empresa":"Claro",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":147.05882355
+    },
+    {
+        "empresa":"Claro",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":44.63533622
+    },
+    {
+        "empresa":"Coca Cola- Femsa",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":94.73684208
+    },
+    {
+        "empresa":"Coca Cola- Femsa",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":35.203854699
+    },
+    {
+        "empresa":"Coca Cola- Femsa",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.10526316
+    },
+    {
+        "empresa":"Coca Cola- Femsa",
+        "pilar":"Acción Climática y Energía",
+        "value":151.73494134
+    },
+    {
+        "empresa":"Coca Cola- Femsa",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":41.88365651
+    },
+    {
+        "empresa":"Coca Cola- Femsa",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":78.9473684
+    },
+    {
+        "empresa":"Colgate",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":7.894736842
+    },
+    {
+        "empresa":"Colgate",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":15.789473685
+    },
+    {
+        "empresa":"Colgate",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":78.9473684
+    },
+    {
+        "empresa":"Colgate",
+        "pilar":"Acción Climática y Energía",
+        "value":105.2631579
+    },
+    {
+        "empresa":"Colgate",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.10526316
+    },
+    {
+        "empresa":"Colgate",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":63.157894724
+    },
+    {
+        "empresa":"Colombina",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":78.9473684
+    },
+    {
+        "empresa":"Colombina",
+        "pilar":"Acción Climática y Energía",
+        "value":172.82767133
+    },
+    {
+        "empresa":"Colombina",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":43.484194634
+    },
+    {
+        "empresa":"Colombina",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":68.8272948
+    },
+    {
+        "empresa":"Colombina",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":94.585821104
+    },
+    {
+        "empresa":"Colombina",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":60.657979741
+    },
+    {
+        "empresa":"Compañía Nacional de Chocolates",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.10526316
+    },
+    {
+        "empresa":"Compañía Nacional de Chocolates",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":27.801546115
+    },
+    {
+        "empresa":"Compañía Nacional de Chocolates",
+        "pilar":"Acción Climática y Energía",
+        "value":94.73684211
+    },
+    {
+        "empresa":"Compañía Nacional de Chocolates",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":47.368421044
+    },
+    {
+        "empresa":"Compañía Nacional de Chocolates",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":10.52631579
+    },
+    {
+        "empresa":"Compañía Nacional de Chocolates",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":47.36842104
+    },
+    {
+        "empresa":"Conconcreto",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":14.28571429
+    },
+    {
+        "empresa":"Conconcreto",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":52.562508004
+    },
+    {
+        "empresa":"Conconcreto",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":95.23809525
+    },
+    {
+        "empresa":"Conconcreto",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":23.80952381
+    },
+    {
+        "empresa":"Conconcreto",
+        "pilar":"Acción Climática y Energía",
+        "value":88.936005278
+    },
+    {
+        "empresa":"Conconcreto",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":16.275050556
+    },
+    {
+        "empresa":"Corbeta",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"Corbeta",
+        "pilar":"Acción Climática y Energía",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Corbeta",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Corbeta",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Corbeta",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Corbeta",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Cruz Verde",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Cruz Verde",
+        "pilar":"Acción Climática y Energía",
+        "value":131.153490182
+    },
+    {
+        "empresa":"Cruz Verde",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.6470588
+    },
+    {
+        "empresa":"Cruz Verde",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":23.52941176
+    },
+    {
+        "empresa":"Cruz Verde",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":26.297796421
+    },
+    {
+        "empresa":"Cruz Verde",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":52.94117646
+    },
+    {
+        "empresa":"D1",
+        "pilar":"Acción Climática y Energía",
+        "value":78.423341391
+    },
+    {
+        "empresa":"D1",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":52.577319581
+    },
+    {
+        "empresa":"D1",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.6470588
+    },
+    {
+        "empresa":"D1",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"D1",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":19.534692045
+    },
+    {
+        "empresa":"D1",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":88.0237358
+    },
+    {
+        "empresa":"Davivienda",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":94.664967891
+    },
+    {
+        "empresa":"Davivienda",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":41.176257836
+    },
+    {
+        "empresa":"Davivienda",
+        "pilar":"Acción Climática y Energía",
+        "value":81.75298329
+    },
+    {
+        "empresa":"Davivienda",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":147.05882355
+    },
+    {
+        "empresa":"Davivienda",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":82.35294116
+    },
+    {
+        "empresa":"Davivienda",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Distracom",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"Distracom",
+        "pilar":"Acción Climática y Energía",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Distracom",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Distracom",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Distracom",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Distracom",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Drummond",
+        "pilar":"Acción Climática y Energía",
+        "value":110.8072941
+    },
+    {
+        "empresa":"Drummond",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":15.981643358
+    },
+    {
+        "empresa":"Drummond",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":76.9230769
+    },
+    {
+        "empresa":"Drummond",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":114.34015093
+    },
+    {
+        "empresa":"Drummond",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":141.729110606
+    },
+    {
+        "empresa":"Drummond",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":94.14027149
+    },
+    {
+        "empresa":"EPM",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"EPM",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":24.841089489
+    },
+    {
+        "empresa":"EPM",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":97.773101601
+    },
+    {
+        "empresa":"EPM",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":79.01720806
+    },
+    {
+        "empresa":"EPM",
+        "pilar":"Acción Climática y Energía",
+        "value":81.2155147
+    },
+    {
+        "empresa":"EPM",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.64705884
+    },
+    {
+        "empresa":"ES Windows",
+        "pilar":"Acción Climática y Energía",
+        "value":63.15789474
+    },
+    {
+        "empresa":"ES Windows",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"ES Windows",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"ES Windows",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":15.78947368
+    },
+    {
+        "empresa":"ES Windows",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":15.78947368
+    },
+    {
+        "empresa":"ES Windows",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":0.0
+    },
+    {
+        "empresa":"Ecopetrol",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":100.170940143
+    },
+    {
+        "empresa":"Ecopetrol",
+        "pilar":"Acción Climática y Energía",
+        "value":96.15384615
+    },
+    {
+        "empresa":"Ecopetrol",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":114.154323
+    },
+    {
+        "empresa":"Ecopetrol",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":70.849331584
+    },
+    {
+        "empresa":"Ecopetrol",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":76.9230769
+    },
+    {
+        "empresa":"Ecopetrol",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":61.048951055
+    },
+    {
+        "empresa":"Emgesa",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":38.235275112
+    },
+    {
+        "empresa":"Emgesa",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":48.063681685
+    },
+    {
+        "empresa":"Emgesa",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":147.05882355
+    },
+    {
+        "empresa":"Emgesa",
+        "pilar":"Acción Climática y Energía",
+        "value":100.298164174
+    },
+    {
+        "empresa":"Emgesa",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":100.900742774
+    },
+    {
+        "empresa":"Emgesa",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":73.586347623
+    },
+    {
+        "empresa":"Esenttia",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":51.634467873
+    },
+    {
+        "empresa":"Esenttia",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":94.72850143
+    },
+    {
+        "empresa":"Esenttia",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":83.31708186
+    },
+    {
+        "empresa":"Esenttia",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":78.9473684
+    },
+    {
+        "empresa":"Esenttia",
+        "pilar":"Acción Climática y Energía",
+        "value":174.71480533
+    },
+    {
+        "empresa":"Esenttia",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":70.002965143
+    },
+    {
+        "empresa":"Falabella",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":59.314392592
+    },
+    {
+        "empresa":"Falabella",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":41.176470581
+    },
+    {
+        "empresa":"Falabella",
+        "pilar":"Acción Climática y Energía",
+        "value":157.21231305
+    },
+    {
+        "empresa":"Falabella",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":94.11764704
+    },
+    {
+        "empresa":"Falabella",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":17.375450493
+    },
+    {
+        "empresa":"Falabella",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":109.21224629
+    },
+    {
+        "empresa":"Frontera Energy",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":20.384615386
+    },
+    {
+        "empresa":"Frontera Energy",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":48.205128191
+    },
+    {
+        "empresa":"Frontera Energy",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":61.53846152
+    },
+    {
+        "empresa":"Frontera Energy",
+        "pilar":"Acción Climática y Energía",
+        "value":138.671785405
+    },
+    {
+        "empresa":"Frontera Energy",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":57.69230769
+    },
+    {
+        "empresa":"Frontera Energy",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":124.670481895
+    },
+    {
+        "empresa":"GEB",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":71.398084363
+    },
+    {
+        "empresa":"GEB",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":70.58823528
+    },
+    {
+        "empresa":"GEB",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":46.928816616
+    },
+    {
+        "empresa":"GEB",
+        "pilar":"Acción Climática y Energía",
+        "value":92.08295644
+    },
+    {
+        "empresa":"GEB",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.64705884
+    },
+    {
+        "empresa":"GEB",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Gases del Caribe",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":29.411764701
+    },
+    {
+        "empresa":"Gases del Caribe",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":17.458542458
+    },
+    {
+        "empresa":"Gases del Caribe",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.64705884
+    },
+    {
+        "empresa":"Gases del Caribe",
+        "pilar":"Acción Climática y Energía",
+        "value":85.435091727
+    },
+    {
+        "empresa":"Gases del Caribe",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":26.883201323
+    },
+    {
+        "empresa":"Gases del Caribe",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":23.527419053
+    },
+    {
+        "empresa":"General Motors",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.10526316
+    },
+    {
+        "empresa":"General Motors",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":63.15789472
+    },
+    {
+        "empresa":"General Motors",
+        "pilar":"Acción Climática y Energía",
+        "value":94.73684211
+    },
+    {
+        "empresa":"General Motors",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":26.315789475
+    },
+    {
+        "empresa":"General Motors",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":16.776315789
+    },
+    {
+        "empresa":"General Motors",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":86.842105242
+    },
+    {
+        "empresa":"Geopark",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":76.9230769
+    },
+    {
+        "empresa":"Geopark",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":41.783216787
+    },
+    {
+        "empresa":"Geopark",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":92.30769228
+    },
+    {
+        "empresa":"Geopark",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":64.69454635
+    },
+    {
+        "empresa":"Geopark",
+        "pilar":"Acción Climática y Energía",
+        "value":141.594285465
+    },
+    {
+        "empresa":"Geopark",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":115.31464299
+    },
+    {
+        "empresa":"Gran Tierra Energy",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":38.46153846
+    },
+    {
+        "empresa":"Gran Tierra Energy",
+        "pilar":"Acción Climática y Energía",
+        "value":109.50962727
+    },
+    {
+        "empresa":"Gran Tierra Energy",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":30.76923076
+    },
+    {
+        "empresa":"Gran Tierra Energy",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":14.195804196
+    },
+    {
+        "empresa":"Gran Tierra Energy",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":95.352417261
+    },
+    {
+        "empresa":"Gran Tierra Energy",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":76.9230769
+    },
+    {
+        "empresa":"Grupo Bios",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":28.57142858
+    },
+    {
+        "empresa":"Grupo Bios",
+        "pilar":"Acción Climática y Energía",
+        "value":19.04761905
+    },
+    {
+        "empresa":"Grupo Bios",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":42.85714287
+    },
+    {
+        "empresa":"Grupo Bios",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Grupo Bios",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":54.82625484
+    },
+    {
+        "empresa":"Grupo Bios",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":35.714285723
+    },
+    {
+        "empresa":"Grupo Diana",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Grupo Diana",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":0.0
+    },
+    {
+        "empresa":"Grupo Diana",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Grupo Diana",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Grupo Diana",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":15.78947368
+    },
+    {
+        "empresa":"Grupo Diana",
+        "pilar":"Acción Climática y Energía",
+        "value":63.15789474
+    },
+    {
+        "empresa":"Haceb",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":63.15789472
+    },
+    {
+        "empresa":"Haceb",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":42.493074794
+    },
+    {
+        "empresa":"Haceb",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":66.37361763
+    },
+    {
+        "empresa":"Haceb",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":86.807468312
+    },
+    {
+        "empresa":"Haceb",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":17.624166049
+    },
+    {
+        "empresa":"Haceb",
+        "pilar":"Acción Climática y Energía",
+        "value":157.85415451
+    },
+    {
+        "empresa":"Hocol",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":93.76255444
+    },
+    {
+        "empresa":"Hocol",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":61.53846152
+    },
+    {
+        "empresa":"Hocol",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":132.90823911
+    },
+    {
+        "empresa":"Hocol",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":38.461538452
+    },
+    {
+        "empresa":"Hocol",
+        "pilar":"Acción Climática y Energía",
+        "value":143.147879145
+    },
+    {
+        "empresa":"Hocol",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":21.765734267
+    },
+    {
+        "empresa":"INCUBADORA SANTANDER S.A. (Huevos Kikes)",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":28.57142858
+    },
+    {
+        "empresa":"INCUBADORA SANTANDER S.A. (Huevos Kikes)",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"INCUBADORA SANTANDER S.A. (Huevos Kikes)",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":23.80952381
+    },
+    {
+        "empresa":"INCUBADORA SANTANDER S.A. (Huevos Kikes)",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"INCUBADORA SANTANDER S.A. (Huevos Kikes)",
+        "pilar":"Acción Climática y Energía",
+        "value":19.04761905
+    },
+    {
+        "empresa":"INCUBADORA SANTANDER S.A. (Huevos Kikes)",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"ISA",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":52.941176461
+    },
+    {
+        "empresa":"ISA",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":35.271373473
+    },
+    {
+        "empresa":"ISA",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":147.05882355
+    },
+    {
+        "empresa":"ISA",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":11.603138409
+    },
+    {
+        "empresa":"ISA",
+        "pilar":"Acción Climática y Energía",
+        "value":115.41226587
+    },
+    {
+        "empresa":"ISA",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":44.9076442
+    },
+    {
+        "empresa":"ISMOCOL SA",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"ISMOCOL SA",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"ISMOCOL SA",
+        "pilar":"Acción Climática y Energía",
+        "value":42.85714287
+    },
+    {
+        "empresa":"ISMOCOL SA",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":14.28571429
+    },
+    {
+        "empresa":"ISMOCOL SA",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":0.0
+    },
+    {
+        "empresa":"ISMOCOL SA",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Isagen",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":88.23529413
+    },
+    {
+        "empresa":"Isagen",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":35.293966681
+    },
+    {
+        "empresa":"Isagen",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.278146646
+    },
+    {
+        "empresa":"Isagen",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Isagen",
+        "pilar":"Acción Climática y Energía",
+        "value":64.447406891
+    },
+    {
+        "empresa":"Isagen",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":46.691176462
+    },
+    {
+        "empresa":"Italcol",
+        "pilar":"Acción Climática y Energía",
+        "value":63.15789474
+    },
+    {
+        "empresa":"Italcol",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":15.78947368
+    },
+    {
+        "empresa":"Italcol",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Italcol",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Italcol",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Italcol",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":0.0
+    },
+    {
+        "empresa":"LATAM",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":147.05882355
+    },
+    {
+        "empresa":"LATAM",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":52.941176461
+    },
+    {
+        "empresa":"LATAM",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"LATAM",
+        "pilar":"Acción Climática y Energía",
+        "value":58.79178876
+    },
+    {
+        "empresa":"LATAM",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":41.174377244
+    },
+    {
+        "empresa":"LATAM",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":56.275794285
+    },
+    {
+        "empresa":"MARVAL S.A.S.",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":42.157793056
+    },
+    {
+        "empresa":"MARVAL S.A.S.",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":35.714285723
+    },
+    {
+        "empresa":"MARVAL S.A.S.",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":11.70068027
+    },
+    {
+        "empresa":"MARVAL S.A.S.",
+        "pilar":"Acción Climática y Energía",
+        "value":57.14285716
+    },
+    {
+        "empresa":"MARVAL S.A.S.",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":76.1904762
+    },
+    {
+        "empresa":"MARVAL S.A.S.",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":23.80952381
+    },
+    {
+        "empresa":"Mazda",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":17.647058824
+    },
+    {
+        "empresa":"Mazda",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":23.52941176
+    },
+    {
+        "empresa":"Mazda",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":30.117647054
+    },
+    {
+        "empresa":"Mazda",
+        "pilar":"Acción Climática y Energía",
+        "value":88.2352941
+    },
+    {
+        "empresa":"Mazda",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":17.64705882
+    },
+    {
+        "empresa":"Mazda",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.6470588
+    },
+    {
+        "empresa":"Mercado Libre",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":20.588235294
+    },
+    {
+        "empresa":"Mercado Libre",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Mercado Libre",
+        "pilar":"Acción Climática y Energía",
+        "value":94.098188998
+    },
+    {
+        "empresa":"Mercado Libre",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Mercado Libre",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":52.818627441
+    },
+    {
+        "empresa":"Mercado Libre",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.64705884
+    },
+    {
+        "empresa":"Nestle",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":63.15789472
+    },
+    {
+        "empresa":"Nestle",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.10526316
+    },
+    {
+        "empresa":"Nestle",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":37.218045112
+    },
+    {
+        "empresa":"Nestle",
+        "pilar":"Acción Climática y Energía",
+        "value":73.68421053
+    },
+    {
+        "empresa":"Nestle",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":39.473684202
+    },
+    {
+        "empresa":"Nestle",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":31.57894737
+    },
+    {
+        "empresa":"Oleoducto Central (Ocensa)",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":44.11764706
+    },
+    {
+        "empresa":"Oleoducto Central (Ocensa)",
+        "pilar":"Acción Climática y Energía",
+        "value":99.75413699
+    },
+    {
+        "empresa":"Oleoducto Central (Ocensa)",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.64705884
+    },
+    {
+        "empresa":"Oleoducto Central (Ocensa)",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":64.705882341
+    },
+    {
+        "empresa":"Oleoducto Central (Ocensa)",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":44.11701205
+    },
+    {
+        "empresa":"Oleoducto Central (Ocensa)",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Olímpica",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Olímpica",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"Olímpica",
+        "pilar":"Acción Climática y Energía",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Olímpica",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Olímpica",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":23.52941176
+    },
+    {
+        "empresa":"Olímpica",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"POLLOS EL BUCANERO S.A. (Cargill)",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":15.78947368
+    },
+    {
+        "empresa":"POLLOS EL BUCANERO S.A. (Cargill)",
+        "pilar":"Acción Climática y Energía",
+        "value":63.15789474
+    },
+    {
+        "empresa":"POLLOS EL BUCANERO S.A. (Cargill)",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"POLLOS EL BUCANERO S.A. (Cargill)",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"POLLOS EL BUCANERO S.A. (Cargill)",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"POLLOS EL BUCANERO S.A. (Cargill)",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":0.0
+    },
+    {
+        "empresa":"Pepsico",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.10526316
+    },
+    {
+        "empresa":"Pepsico",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":78.947368404
+    },
+    {
+        "empresa":"Pepsico",
+        "pilar":"Acción Climática y Energía",
+        "value":115.78947369
+    },
+    {
+        "empresa":"Pepsico",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":47.36842104
+    },
+    {
+        "empresa":"Pepsico",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":7.894736842
+    },
+    {
+        "empresa":"Pepsico",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":10.52631579
+    },
+    {
+        "empresa":"Petromil",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Petromil",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Petromil",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"Petromil",
+        "pilar":"Acción Climática y Energía",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Petromil",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Petromil",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Postobón",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.10526316
+    },
+    {
+        "empresa":"Postobón",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":78.9473684
+    },
+    {
+        "empresa":"Postobón",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":110.14680892
+    },
+    {
+        "empresa":"Postobón",
+        "pilar":"Acción Climática y Energía",
+        "value":198.233504025
+    },
+    {
+        "empresa":"Postobón",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":92.443378835
+    },
+    {
+        "empresa":"Postobón",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":37.078202291
+    },
+    {
+        "empresa":"Pricesmart",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":94.11764704
+    },
+    {
+        "empresa":"Pricesmart",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":17.64705882
+    },
+    {
+        "empresa":"Pricesmart",
+        "pilar":"Acción Climática y Energía",
+        "value":105.7824416
+    },
+    {
+        "empresa":"Pricesmart",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":6.526402952
+    },
+    {
+        "empresa":"Pricesmart",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":12.70588235
+    },
+    {
+        "empresa":"Pricesmart",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":5.882352941
+    },
+    {
+        "empresa":"Primax",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":26.4547943
+    },
+    {
+        "empresa":"Primax",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Primax",
+        "pilar":"Acción Climática y Energía",
+        "value":167.408799512
+    },
+    {
+        "empresa":"Primax",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":105.882352922
+    },
+    {
+        "empresa":"Primax",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":11.11111111
+    },
+    {
+        "empresa":"Primax",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.6470588
+    },
+    {
+        "empresa":"Productos Familia (Essity)",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":110.52631576
+    },
+    {
+        "empresa":"Productos Familia (Essity)",
+        "pilar":"Acción Climática y Energía",
+        "value":126.31578948
+    },
+    {
+        "empresa":"Productos Familia (Essity)",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":63.15789472
+    },
+    {
+        "empresa":"Productos Familia (Essity)",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.10526316
+    },
+    {
+        "empresa":"Productos Familia (Essity)",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":48.563750919
+    },
+    {
+        "empresa":"Productos Familia (Essity)",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":31.57894737
+    },
+    {
+        "empresa":"Promigas",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":70.564347589
+    },
+    {
+        "empresa":"Promigas",
+        "pilar":"Acción Climática y Energía",
+        "value":98.596681181
+    },
+    {
+        "empresa":"Promigas",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":75.626099133
+    },
+    {
+        "empresa":"Promigas",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":38.391471541
+    },
+    {
+        "empresa":"Promigas",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":35.293871077
+    },
+    {
+        "empresa":"Promigas",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":147.05882355
+    },
+    {
+        "empresa":"Rappi",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Rappi",
+        "pilar":"Acción Climática y Energía",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Rappi",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":23.52941176
+    },
+    {
+        "empresa":"Rappi",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Rappi",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"Rappi",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Reficar",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":78.9473684
+    },
+    {
+        "empresa":"Reficar",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":70.447103742
+    },
+    {
+        "empresa":"Reficar",
+        "pilar":"Acción Climática y Energía",
+        "value":52.63157895
+    },
+    {
+        "empresa":"Reficar",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":79.66825691
+    },
+    {
+        "empresa":"Reficar",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":34.123916422
+    },
+    {
+        "empresa":"Reficar",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":41.551246539
+    },
+    {
+        "empresa":"Renault",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":58.594263087
+    },
+    {
+        "empresa":"Renault",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":78.904596174
+    },
+    {
+        "empresa":"Renault",
+        "pilar":"Acción Climática y Energía",
+        "value":136.50957116
+    },
+    {
+        "empresa":"Renault",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":63.15789472
+    },
+    {
+        "empresa":"Renault",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":21.05263158
+    },
+    {
+        "empresa":"Renault",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":31.57894736
+    },
+    {
+        "empresa":"Riopaila Castilla",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":13.793550778
+    },
+    {
+        "empresa":"Riopaila Castilla",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":63.15789472
+    },
+    {
+        "empresa":"Riopaila Castilla",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":65.48658883
+    },
+    {
+        "empresa":"Riopaila Castilla",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":42.10526316
+    },
+    {
+        "empresa":"Riopaila Castilla",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":93.889433984
+    },
+    {
+        "empresa":"Riopaila Castilla",
+        "pilar":"Acción Climática y Energía",
+        "value":175.13154929
+    },
+    {
+        "empresa":"Samsung",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.6470588
+    },
+    {
+        "empresa":"Samsung",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Samsung",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":41.176470581
+    },
+    {
+        "empresa":"Samsung",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":39.05882352
+    },
+    {
+        "empresa":"Samsung",
+        "pilar":"Acción Climática y Energía",
+        "value":88.2352941
+    },
+    {
+        "empresa":"Samsung",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":29.411764706
+    },
+    {
+        "empresa":"SierraCol Energy",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":57.69230769
+    },
+    {
+        "empresa":"SierraCol Energy",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":61.53846152
+    },
+    {
+        "empresa":"SierraCol Energy",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":134.136982007
+    },
+    {
+        "empresa":"SierraCol Energy",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":38.119658112
+    },
+    {
+        "empresa":"SierraCol Energy",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":34.090909095
+    },
+    {
+        "empresa":"SierraCol Energy",
+        "pilar":"Acción Climática y Energía",
+        "value":167.621634
+    },
+    {
+        "empresa":"Sodimac (Homecenter)",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":77.72617818
+    },
+    {
+        "empresa":"Sodimac (Homecenter)",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":29.18031475
+    },
+    {
+        "empresa":"Sodimac (Homecenter)",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":58.036300071
+    },
+    {
+        "empresa":"Sodimac (Homecenter)",
+        "pilar":"Acción Climática y Energía",
+        "value":128.518912812
+    },
+    {
+        "empresa":"Sodimac (Homecenter)",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":63.994825813
+    },
+    {
+        "empresa":"Sodimac (Homecenter)",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.6470588
+    },
+    {
+        "empresa":"Sucafina",
+        "pilar":"Acción Climática y Energía",
+        "value":79.411764692
+    },
+    {
+        "empresa":"Sucafina",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":23.52941176
+    },
+    {
+        "empresa":"Sucafina",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":94.11764704
+    },
+    {
+        "empresa":"Sucafina",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":17.647058821
+    },
+    {
+        "empresa":"Sucafina",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Sucafina",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":26.470588235
+    },
+    {
+        "empresa":"Sunshine Bouquet",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":23.80952381
+    },
+    {
+        "empresa":"Sunshine Bouquet",
+        "pilar":"Acción Climática y Energía",
+        "value":19.04761905
+    },
+    {
+        "empresa":"Sunshine Bouquet",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":28.57142858
+    },
+    {
+        "empresa":"Sunshine Bouquet",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":14.28571429
+    },
+    {
+        "empresa":"Sunshine Bouquet",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Sunshine Bouquet",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Suramerica Comercial (Dollar City)",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"Suramerica Comercial (Dollar City)",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Suramerica Comercial (Dollar City)",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Suramerica Comercial (Dollar City)",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Suramerica Comercial (Dollar City)",
+        "pilar":"Acción Climática y Energía",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Suramerica Comercial (Dollar City)",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Tecnoquimicas",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Tecnoquimicas",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"Tecnoquimicas",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Tecnoquimicas",
+        "pilar":"Acción Climática y Energía",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Tecnoquimicas",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Tecnoquimicas",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Telefónica",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":91.789318799
+    },
+    {
+        "empresa":"Telefónica",
+        "pilar":"Acción Climática y Energía",
+        "value":87.571440861
+    },
+    {
+        "empresa":"Telefónica",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":147.05882355
+    },
+    {
+        "empresa":"Telefónica",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":56.127450973
+    },
+    {
+        "empresa":"Telefónica",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":35.291135163
+    },
+    {
+        "empresa":"Telefónica",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":38.393242625
+    },
+    {
+        "empresa":"Teleperformance",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":84.254881822
+    },
+    {
+        "empresa":"Teleperformance",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":52.328431361
+    },
+    {
+        "empresa":"Teleperformance",
+        "pilar":"Acción Climática y Energía",
+        "value":99.641842571
+    },
+    {
+        "empresa":"Teleperformance",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.64705884
+    },
+    {
+        "empresa":"Teleperformance",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Teleperformance",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":26.470494376
+    },
+    {
+        "empresa":"Terpel",
+        "pilar":"Acción Climática y Energía",
+        "value":108.819333377
+    },
+    {
+        "empresa":"Terpel",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":89.811764691
+    },
+    {
+        "empresa":"Terpel",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":76.106791541
+    },
+    {
+        "empresa":"Terpel",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":64.988499417
+    },
+    {
+        "empresa":"Terpel",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":38.835951283
+    },
+    {
+        "empresa":"Terpel",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.6470588
+    },
+    {
+        "empresa":"Tigo",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":17.646609317
+    },
+    {
+        "empresa":"Tigo",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":33.088235291
+    },
+    {
+        "empresa":"Tigo",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":117.64705884
+    },
+    {
+        "empresa":"Tigo",
+        "pilar":"Acción Climática y Energía",
+        "value":91.565309706
+    },
+    {
+        "empresa":"Tigo",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":29.521638141
+    },
+    {
+        "empresa":"Tigo",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":46.89919904
+    },
+    {
+        "empresa":"Toyota",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":88.2352941
+    },
+    {
+        "empresa":"Toyota",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":19.684657366
+    },
+    {
+        "empresa":"Toyota",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":94.11764704
+    },
+    {
+        "empresa":"Toyota",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"Toyota",
+        "pilar":"Acción Climática y Energía",
+        "value":139.62917661
+    },
+    {
+        "empresa":"Toyota",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":35.555555556
+    },
+    {
+        "empresa":"Trafigura (Petroleum)",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":94.11764704
+    },
+    {
+        "empresa":"Trafigura (Petroleum)",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":26.470588235
+    },
+    {
+        "empresa":"Trafigura (Petroleum)",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":23.52941176
+    },
+    {
+        "empresa":"Trafigura (Petroleum)",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Trafigura (Petroleum)",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Trafigura (Petroleum)",
+        "pilar":"Acción Climática y Energía",
+        "value":61.764705872
+    },
+    {
+        "empresa":"Uniban",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":94.11764704
+    },
+    {
+        "empresa":"Uniban",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Uniban",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":22.624692375
+    },
+    {
+        "empresa":"Uniban",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":40.812613701
+    },
+    {
+        "empresa":"Uniban",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":19.450980387
+    },
+    {
+        "empresa":"Uniban",
+        "pilar":"Acción Climática y Energía",
+        "value":121.51980374
+    },
+    {
+        "empresa":"Unilever",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Unilever",
+        "pilar":"Acción Climática y Energía",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Unilever",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"Unilever",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":5.882352941
+    },
+    {
+        "empresa":"Unilever",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Unilever",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Vanti",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":147.05882355
+    },
+    {
+        "empresa":"Vanti",
+        "pilar":"Acción Climática y Energía",
+        "value":64.160088521
+    },
+    {
+        "empresa":"Vanti",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":17.643278062
+    },
+    {
+        "empresa":"Vanti",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":35.29411764
+    },
+    {
+        "empresa":"Vanti",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":37.786544563
+    },
+    {
+        "empresa":"Vanti",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":51.733511667
+    },
+    {
+        "empresa":"Verano energy",
+        "pilar":"Acción Climática y Energía",
+        "value":57.69230769
+    },
+    {
+        "empresa":"Verano energy",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":38.46153846
+    },
+    {
+        "empresa":"Verano energy",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Verano energy",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":19.23076923
+    },
+    {
+        "empresa":"Verano energy",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":0.0
+    },
+    {
+        "empresa":"Verano energy",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":0.0
+    },
+    {
+        "empresa":"YARA COLOMBIA S.A.",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":4.377165785
+    },
+    {
+        "empresa":"YARA COLOMBIA S.A.",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":15.78947368
+    },
+    {
+        "empresa":"YARA COLOMBIA S.A.",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":63.15789472
+    },
+    {
+        "empresa":"YARA COLOMBIA S.A.",
+        "pilar":"Acción Climática y Energía",
+        "value":126.31578948
+    },
+    {
+        "empresa":"YARA COLOMBIA S.A.",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":63.15788392
+    },
+    {
+        "empresa":"YARA COLOMBIA S.A.",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":21.05263158
+    },
+    {
+        "empresa":"Yamaha",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":42.10526316
+    },
+    {
+        "empresa":"Yamaha",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":0.0
+    },
+    {
+        "empresa":"Yamaha",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":31.57894736
+    },
+    {
+        "empresa":"Yamaha",
+        "pilar":"Acción Climática y Energía",
+        "value":63.15789474
+    },
+    {
+        "empresa":"Yamaha",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":31.57888907
+    },
+    {
+        "empresa":"Yamaha",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":10.52631579
+    },
+    {
+        "empresa":"Éxito",
+        "pilar":"Diversidad, Equidad e Inclusión (DEI)",
+        "value":76.17475059
+    },
+    {
+        "empresa":"Éxito",
+        "pilar":"Gestión de Recursos Naturales y Circularidad",
+        "value":27.355859819
+    },
+    {
+        "empresa":"Éxito",
+        "pilar":"Capital Humano: Bienestar y Desarrollo",
+        "value":52.94117646
+    },
+    {
+        "empresa":"Éxito",
+        "pilar":"Acción Climática y Energía",
+        "value":122.72294869
+    },
+    {
+        "empresa":"Éxito",
+        "pilar":"Impacto Económico, Social y Comunitario",
+        "value":35.294117642
+    },
+    {
+        "empresa":"Éxito",
+        "pilar":"Transparencia y Gobierno de la Sostenibilidad",
+        "value":94.11764704
+    }
+]
