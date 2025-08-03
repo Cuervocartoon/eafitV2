@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Sostenibilidad EAFIT</title>
+
+    <!-- Tailwind CSS para estilos rápidos y responsivos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Plotly.js -->
+    <script type="text/javascript">window.PlotlyConfig = { MathJaxConfig: 'local' };</script>
+    <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.0.1.min.js" integrity="sha256-oy6Be7Eh6eiQFs5M7oXuPxxm9qbJXEtTpfSI93dW16Q=" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ADD8E6;
+            /* Un azul grisáceo más suave */
+        }
+
+        .chart-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Contenedor Principal -->
+    <div class="container mx-auto p-4 md:p-8">
+
+        <!-- Encabezado del Dashboard -->
+        <header class="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Dashboard de Sostenibilidad Empresarial</h1>
+                <p class="text-lg text-gray-500 mt-1">Análisis Visual del Desempeño Corporativo</p>
+            </div>
+            <div>
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="400" height="100" viewBox="0 0 904 228">
+                    <path d="M472 118c0 63.3.3 96 1 96s1-32.7 1-96-.3-96-1-96-1 32.7-1 96zM553.4 47.4c-5.5 2.4-8.1 11.5-4.9 17.6 2.1 4.1 5.3 6 10.1 6 4.4 0 9.4-3.4 9.4-6.5 0-2.2-2-1.8-4.6 1C558.3 71 551 67 551 58.6c0-5.5 2.8-8.6 7.5-8.6 2.6 0 3.9.6 5.1 2.5.9 1.4 2.3 2.5 3 2.5 3.2 0 .6-5.3-3.6-7.5-3.5-1.8-5.5-1.8-9.6-.1zM679 50.9c0 3.9 0 4-2.6 2.7-3.2-1.7-5.9-1-8.4 2.2-4.5 5.6-1.1 15.2 5.4 15.2 1.7 0 3.7-.5 4.4-1.2.9-.9 1.2-.9 1.2 0 0 .7.9 1.2 2 1.2 1.9 0 2-.7 2-12s-.1-12-2-12c-1.7 0-2 .7-2 3.9zm-1.2 6.3c.7.7 1.2 2.8 1.2 4.8 0 4.1-1.4 6-4.5 6s-4.5-1.9-4.5-6 1.4-6 4.5-6c1.2 0 2.6.5 3.3 1.2zM614 50.5c0 1.6-.6 2.5-1.5 2.5-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5c1.2 0 1.5 1.4 1.5 6.3 0 6.8 1 8.7 4.7 8.7 2.8 0 3.1-2.6.3-3.3-1.7-.4-2-1.4-2-6.1 0-4.9.2-5.6 2-5.6 1.1 0 2-.6 2-1.4 0-.7-.9-1.6-2-1.9-1.2-.3-2-1.4-2-2.6 0-1.2-.6-2.1-1.5-2.1s-1.5.9-1.5 2.5zM577.4 53c-5.6 2.2-7.4 11.8-3.1 15.8 3 2.8 9.7 3 12 .4 1-1 1.7-2.2 1.7-2.5 0-1.2-3.8-.8-4.2.4-.6 1.8-6 1.3-7.5-.7-2.2-3-1.6-3.4 5.2-3.4h6.5v-3c0-2.8-2.9-7-4.9-7-.5 0-1.5-.2-2.3-.4-.7-.3-2.3-.1-3.4.4zm6.7 5.1c.9 1.7.6 1.9-4 1.9-4.2 0-4.9-.3-4.4-1.6.7-1.8 4.2-3.4 6.1-2.7.7.3 1.7 1.4 2.3 2.4zM598.6 53.6c-1.4.7-2.6.9-2.6.3 0-.5-.9-.9-2-.9-1.9 0-2 .7-2 9s.1 9 2 9c1.8 0 2-.7 2-6.4 0-7 1.2-9 5.2-8.4 2.1.3 2.3.8 2.6 7.5.3 6.5.5 7.3 2.2 7.3 1.8 0 2-.7 2-6.8 0-9.8-3.5-13.7-9.4-10.6zM632.7 52.7c-.4.3-2.3.6-4.2.5l-3.5-.1V62c0 8.3.2 9 2 9 1.7 0 1.9-.8 2.2-7.3.3-7 .4-7.2 3.1-7.5 1.9-.2 2.7-.9 2.7-2.3 0-1.9-1.1-2.5-2.3-1.2zM643 52.7c-3.9 1.4-6 4.6-6 9.3 0 5.6 2.9 9 7.7 9 4.5 0 6.2-.9 7.8-4.1 2.9-5.5.8-11.9-4.6-13.8-1.8-.6-3.2-1.1-3.3-1-.1 0-.8.3-1.6.6zm6.4 6.5c.6 1.8.6 3.8 0 5.5-.8 2.3-1.5 2.8-4.4 2.8-2.9 0-3.5-.4-4.3-3-.5-1.9-.4-4.1.2-5.8.9-2.4 1.6-2.8 4.3-2.5 2.5.2 3.5.9 4.2 3zM693.4 52.8c-3.7.5-5.9 3.9-5.9 9.2 0 6.3 2.3 9 7.7 9 4.6 0 7.8-1.5 7.8-3.5 0-1.9-1-1.9-4.6 0-2.4 1.2-3.2 1.2-4.9.1-1.1-.7-2.1-2.1-2.3-3-.3-1.3.7-1.6 6.4-1.6h6.7l-.7-3.2c-1.1-5.5-4.6-7.9-10.2-7zm5.8 4.6c1.5 2.1.8 2.6-3.7 2.6-4.9 0-5.7-1.1-2.4-3.4 2.2-1.5 4.8-1.1 6.1.8zM243.5 55.5c-4.9 1.8-6.5 3.8-6.5 8.4 0 2.9.8 4.2 5 8.1 2.8 2.5 5 5.4 5 6.5 0 1.6-.6 1.7-6.5 1.2l-6.6-.6.7 3.7c.4 2 .8 3.9 1 4.1.8.9 11.4 1.3 15 .7 4.9-1 8.4-4.6 8.4-8.9 0-2.8-.9-4.3-5.6-8.6-4.8-4.4-5.4-5.4-4.3-6.8 1-1.1 2.4-1.4 5.6-.9l4.3.6v-4c0-3.5-.3-4-2.2-4-1.3 0-3.9-.2-5.8-.5s-5.3.2-7.5 1zM21.6 56.2c-.3.7-.7 6.5-1 12.8-.7 13.1 0 15.1 6 17.6 4.8 2 16.1 1.8 20.3-.4 5.9-3 6.9-5.3 7.6-19l.7-12.2H43v7.2c-.1 9-1.3 15.8-3.1 16.9-2.2 1.4-4.6 1.1-6.5-.8-1.5-1.5-1.6-3.1-1-12.5L33 55h-5.5c-3.6 0-5.7.4-5.9 1.2zM61 63.2c0 4.6-.3 12-.7 16.5l-.6 8.3H70l.1-7.8c.1-12.3.8-12.5 6.2-1.7L81 88h13.7l.7-9.3c.3-5 .9-12.5 1.2-16.5l.6-7.2H86.1l-.3 10.2-.3 10.3-4.9-10.3L75.7 55H61v8.2zM103 61.7c0 3.8-.3 11.2-.7 16.5l-.6 9.8H114v-6.8c0-3.7.3-11.1.7-16.5l.6-9.7H103v6.7zM120.1 55.7c0 .5 2.4 7.8 5.3 16.3l5.3 15.5 6.6.3 6.6.3 8.1-16c4.4-8.9 8-16.3 8-16.6 0-.3-2.6-.5-5.8-.5h-5.8l-4.9 12c-2.7 6.7-5.2 11.5-5.5 10.8-.4-.7-2-6.1-3.6-12.1L131.6 55h-5.8c-3.2 0-5.8.3-5.7.7zM164.6 62.2c-.3 4-.8 11.5-1.1 16.5l-.7 9.3H191v-8h-8c-7.9 0-8 0-8-2.5 0-2.4.2-2.5 7-2.5h7v-7.6l-6.5.4c-6.4.4-6.5.4-6.5-2.2s0-2.6 7.9-2.6h7.9l.6-3.1c.3-1.7.6-3.5.6-4s-6.3-.9-13.9-.9h-13.9l-.6 7.2zM199 60.8c0 3.3-.3 10.7-.7 16.6l-.6 10.7 5.4-.3 5.4-.3.2-10.5c.4-15.7.8-16.3 8.1-14.4 4.2 1.2 2.5 6.7-2.4 7.6l-2 .3 2 8.5 2.1 8.5 5.8.3c3.1.2 5.7-.1 5.7-.6 0-.4-.9-3.6-2.1-7l-2.1-6.2 3.1-2.9c2.4-2.2 3.1-3.8 3.1-6.6 0-7.9-3.2-9.5-19.6-9.5H199v5.8zM266.6 67.7c-.4 7.1-.8 14.4-.9 16.3l-.2 3.5 5.7.3 5.6.3.6-10.8c.3-5.9.8-13.4 1.1-16.6l.5-5.7h-11.8l-.6 12.7zM285 65.4c0 5.6-.3 13.1-.6 16.5l-.7 6.1h9.4c14.7 0 20.4-2.4 23.5-9.7 2.1-4.9 1.8-13.2-.6-17.1-3-4.9-7.2-6.2-20-6.2h-11v10.4zm18.7-1.6c1.9 1.2 3.1 5.5 2.6 8.8-.8 4.4-4.1 7.4-8.1 7.4-3.3 0-3.4-.1-2.8-3.1.3-1.7.6-5.6.6-8.5V63h3.3c1.7 0 3.7.4 4.4.8zM328.9 65.2c-2.8 5.7-6.7 13.1-8.6 16.6l-3.5 6.3 6.3-.3c6.3-.3 6.4-.4 8.2-4.1L333 80h12.9l1.2 4 1.2 4h6c5.2 0 5.9-.2 5.4-1.8-.3-.9-2.9-8.3-5.8-16.5L348.6 55H334l-5.1 10.2zm14.5 5c.6 2.6.4 2.8-2.7 2.8-1.9 0-3.6-.3-3.9-.6-.4-.3.4-2.7 1.5-5.4l2.2-4.9 1.1 2.7c.6 1.5 1.4 3.9 1.8 5.4zM365 63.8c0 4.9-.3 12.4-.7 16.7l-.6 7.7 11.4-.3c12.5-.4 16.2-1.8 20.2-7.2 2.9-3.8 3.5-13.9 1-18.7-2.9-5.6-6.9-7-20-7H365v8.8zm19.2.9c1.2 1.1 1.8 3 1.8 6.1 0 5.9-2.8 9.2-7.8 9.2h-3.5l.7-5.3c.3-2.8.6-6.7.6-8.5 0-2.9.3-3.2 3.2-3.2 1.7 0 4 .7 5 1.7zM772.9 80.1c-2.6 2.6-2.1 5.7 1.2 8.2 2.4 1.7 3 1.8 5.4.6 4.2-2.1 5-5.5 2-8.5-3-2.9-5.8-3.1-8.6-.3zM557.9 83.8c-6.5 3.4-10.7 9.4-11.6 16.9-1.7 14.5 4.8 24.6 17.5 27.3 6.9 1.5 14.1-.1 18.9-4.3 4.7-4.2 6.1-7.4 6.5-14.8l.3-6.4-10.2-.3-10.3-.3v9.1h4c5.6 0 5.4 3.8-.4 6-8.7 3.3-15.3-5.1-13.2-16.5 1.5-8 9.9-11.3 15.2-6 2.1 2.1 3.4 2.5 8.4 2.5 6.8 0 7.1-.5 3.7-6.5-1.6-2.9-3.7-4.8-7.6-6.8-7.4-3.7-14-3.7-21.2.1zM602 94.8c-13.6 7.4-11.1 29.4 3.7 33.1 5.1 1.3 11.2.7 15.6-1.6 2.5-1.2 6.7-6.6 6.7-8.6 0-1.4-11.7-.8-13 .8-2.4 2.9-7.9 1.3-9.3-2.8-.6-1.6.4-1.7 11-1.7h11.6l-.6-5.7c-1-9.6-6.2-14.5-16-15.1-4.7-.2-7 .1-9.7 1.6zm12.8 8.4c2.6 2.6 1.3 3.8-3.8 3.8s-6.4-1.2-3.8-3.8c1.5-1.5 6.1-1.5 7.6 0zM632 110.5V128h11.8l.4-10.6c.3-9.8.5-10.7 2.8-12.6 1.7-1.3 3.3-1.8 5.2-1.4 2.8.5 2.8.5 2.8-4.9s-.1-5.5-2.8-5.5c-3.1 0-5.4 1.5-7 4.5-1 1.8-1.1 1.7-1.2-1.3V93h-12v17.5z" />
+                    <path d="M666 93.7c-13.3 5.4-14.8 26.3-2.5 32.7 5.1 2.6 13.6 2.7 18.9.1 3.3-1.6 7.6-6.5 7.6-8.8 0-1.4-11.4-.7-13.4.8-1.1.8-2.8 1.5-3.8 1.5-1.9 0-5.8-3.3-5.8-5 0-.6 4.5-1 11.5-1H690v-3.8c0-4.7-3.6-11.9-7.3-14.6-2.8-2-13.4-3.3-16.7-1.9zm10.8 9.5c2.5 2.5 1.3 3.8-3.7 3.8-5.5 0-6.9-1-4.5-3.4 1.8-1.9 6.5-2.1 8.2-.4zM694 110.5V128h12v-10.3c0-11.2 1.3-14.7 5.4-14.7 4 0 4.6 1.7 4.6 13.7V128h13.2l-.4-13.8c-.2-11-.7-14.2-2.1-16.3-3.8-5.7-13-6.7-17.7-2l-2.9 2.8-.3-2.6c-.3-2.4-.7-2.6-6-2.9l-5.8-.3v17.6zM741.4 95c-10.6 5.3-12 23-2.3 30.2 8.2 6.1 22.4 3.6 26.3-4.6 2.8-5.9 2.3-6.6-4.2-6.6-5 0-5.9.3-6.7 2.2-1.2 2.7-5.6 3.6-7.4 1.4-3.5-4.2-1.9-14.1 2.5-15.2 2.8-.7 4.3.1 5.4 3.2.9 2.1 1.6 2.4 6.6 2.4h5.7l-.6-3.6c-1.6-9.6-14.8-14.5-25.3-9.4zM771 110.5V128h13V93h-13v17.5zM795.5 94.7c-3.9 2-6.4 5.2-6.5 8 0 2.1.5 2.3 5 2.3 3.7 0 5.5-.5 7-2 2.4-2.4 3-2.4 5.5-.6 3 2.1.5 4.2-6 5-3 .3-6.6 1.1-8 1.8-3.2 1.4-5.5 5.6-5.5 9.8 0 8 11.8 12.2 19.3 6.9 2.7-2 2.7-2 2.7.1 0 1.8.6 2 5.5 2h5.5v-13.6c0-7.8-.5-14.4-1.1-15.6-2.7-5-16.9-7.6-23.4-4.1zm12.3 21c-.2 1.7-1.3 3.3-3 4.3-2.5 1.3-2.9 1.3-4.5-.3-3-2.9-.2-5.5 7-6.6.5 0 .7 1.1.5 2.6zM18.7 129.7c-.4 14.2-1.3 31.2-2.1 37.8-.9 6.6-1.6 12.6-1.6 13.2 0 1 7.7 1.3 35.4 1.3h35.5l.3-10.6.3-10.6-19.7.4-19.8.4V153H78.7l.7-7.7c.3-4.2.6-8.9.6-10.5V132H49v-7h19.4c22.5 0 20.6 1.2 20.6-12.8V104H19.3l-.6 25.7zM127.6 109.7c-4.8 9.9-23.1 44.3-31 58.2-4.2 7.4-7.6 13.5-7.6 13.8 0 .2 7.4.2 16.5.1l16.6-.3 4.3-9.5 4.3-9.5H157.4l3.1 9.7 3 9.8h15.8c8.6 0 15.7-.3 15.7-.6s-4.9-13.7-10.9-29.7c-6-16.1-12.3-33.4-14.1-38.5l-3.3-9.2h-36.3l-2.8 5.7zm24.1 32.9c-.3.3-3.2.4-6.5.2l-6.1-.3 4.1-8.5 4-8.5 2.5 8.3c1.4 4.6 2.3 8.6 2 8.8zM203.6 123.7c-.3 10.9-1.3 27.9-2.1 37.8-.8 9.9-1.5 18.6-1.5 19.2 0 1 3.9 1.3 16 1.3h15.9l.3-14.3.3-14.2 16.1-.3 16.2-.2.4-9.8c.3-5.3.3-10 .1-10.5-.2-.4-7.5-.7-16.2-.7h-15.7l.4-3.5.4-3.5h38.5l.7-5.3c.3-2.8.6-7.6.6-10.5V104H204.3l-.7 19.7zM279 117.7c0 12.8-1 34.2-2.6 55.5l-.7 8.8H308v-18.8c0-17.2 1.1-39.2 2.6-53.5l.6-5.7H279v13.7zM315.6 105.6c-.3.9-.6 5.6-.6 10.5v8.9H340.3l-.8 15.5c-.4 8.6-1.2 21.4-1.9 28.5l-1.1 13h15.2c15 0 15.3 0 15.7-2.3.3-1.2.7-11.4 1-22.7.3-11.3.9-23.1 1.2-26.3l.7-5.7H396v-8.9c0-4.9.3-9.6.6-10.5.6-1.4-3.4-1.6-39.9-1.6-36 0-40.6.2-41.1 1.6zM559 135.1c-8 1.8-12 12.5-7.3 19.8 1.4 2.2 1.3 2.5-2.1 6-4.4 4.5-5.4 8.7-3.2 13.3 3.3 6.8 14.5 10 22.9 6.4 2.8-1.1 3.6-1.1 5.2 0 1.8 1.4 12.5 2 12.5.8 0-.4-1.4-2.2-3.1-4.1-2-2.3-2.8-4.1-2.3-5.2 2.3-5.5 3.3-9 3.4-11.9v-3.3l-4.7.3c-4.6.3-4.8.4-5.6 4-.5 2.1-1.2 3.8-1.5 3.7-.4 0-1.8-1.4-3.1-3l-2.4-3 3.1-3c10.3-10.1 2.4-24-11.8-20.8zm5.4 9.5c2.3.9 2 5.1-.5 6.5-1.7.9-2.3.8-3-.2-1.3-2.1-1.1-5.7.4-6.2.6-.3 1.3-.6 1.4-.6.1-.1.8.2 1.7.5zm-1.4 23.9l3.4 3.5h-3.6c-4.1 0-6.3-2-5.3-5 .9-2.7 1.6-2.6 5.5 1.5zM601 158.5V182h33v-11h-21.1l.3-3.8.3-3.7 9.3-.3 9.2-.3V153h-19.1l.3-3.8.3-3.7 10.3-.3 10.2-.3V135h-33v23.5zM657.4 147.4c-1.7.8-3.9 2.4-4.8 3.7l-1.6 2.3V147h-12l.2 17.2.3 17.3 6.3.3 6.2.3v-11.5c0-9.1.3-11.8 1.6-13 1.9-1.9 2.5-2 4.7-.4 1.3 1.1 1.7 3.4 1.9 12.8l.3 11.5 5.7.3 5.7.3.3-11.7c.3-10.7.5-11.8 2.5-13.1 1.9-1.3 2.4-1.2 4.2.6 1.9 1.9 2.1 3.3 2.1 13.1v11h12v-13.8c0-15.6-.7-17.8-6.4-20.6-3.2-1.6-4.4-1.7-7.7-.7-2.1.6-4.7 2.2-5.6 3.5l-1.8 2.4-2.5-2.8c-3-3.5-7.4-4.4-11.6-2.6zM717 147.1c-1.3.6-3.3 1.7-4.2 2.6-1.7 1.5-1.8 1.5-1.8-.5s-.5-2.2-6.5-2.2H698v48.1l6.3-.3 6.2-.3.6-9c.3-5 .6-8.4.7-7.8.4 2.3 6.3 4.6 10.5 4 7.5-1 11.7-7.6 11.7-18.2-.1-11.6-8.5-19.8-17-16.4zm2.2 10.6c2 1.8 2.5 9.1.8 12.4-1.2 2.2-6.2 2.6-7.8.6-1.7-2.1-2.3-7.2-1.2-10.3 1.8-4.6 4.9-5.7 8.2-2.7zM755.3 147c-1.2.5-2.9 2.2-3.7 3.7l-1.5 2.8-.1-3.3V147h-12v35.1l6.3-.3 6.2-.3.3-10.5c.3-12.2 1.3-14 7.4-14h3.8v-4.9c0-5.9-1.6-7.1-6.7-5.1z" />
+                    <path d="M772.5 147.4c-13.7 5.1-15.3 26-2.6 32.6 8.1 4.1 21.2 1.5 24.5-4.9.9-1.6 1.6-3.5 1.6-4.1 0-1.6-10.5-1.3-12 .5s-7.1 2-8.8.3c-.7-.7-1.2-2-1.2-3 0-1.6 1.1-1.8 11-1.8h11v-4.3c0-5.2-3.4-11.5-7.6-13.9-4.3-2.5-11.1-3.1-15.9-1.4zm8.9 8.2c.9.4 2.1 1.5 2.7 2.5.9 1.8.5 1.9-4.6 1.9-4.1 0-5.5-.4-5.5-1.5 0-2.5 4.1-4.2 7.4-2.9zM809.3 147c-5.1 1.2-8.1 3.7-9.4 7.8-.9 3.2-.8 4.4.5 7 1.9 3.7 3.7 4.8 10.2 6.2 2.7.5 5.9 1.2 7.2 1.5 2.9.7 2.8 3.3-.2 4.1-2.5.6-6.6-1-6.6-2.6 0-.6-2.7-1-6-1-5.2 0-6 .3-6 1.9 0 2.7 3.9 7.1 7.6 8.7 4.8 2 14.1 1.7 19.2-.6 3.1-1.4 4.7-2.9 5.8-5.6 3.1-7.4.3-11-10.7-13.8-5.8-1.5-8.4-2.6-8.4-3.6 0-2.2 6.3-2.6 7.1-.6.5 1.2 2.1 1.6 6.6 1.6 5.7 0 5.9-.1 5.3-2.3-1.3-4.1-5.5-7.5-10.7-8.6-5.5-1.2-6.9-1.2-11.5-.1zM846.1 147c-3.7.9-8.5 5.3-9.6 8.7-.6 2.2-.4 2.3 5.3 2.3 4.5 0 6.1-.4 6.6-1.6.9-2.4 6-1.4 6.4 1.3.3 1.8-.3 2.2-4 2.8-8.5 1.2-9.9 1.7-12.8 4.2-2.6 2.1-3 3.2-3 7.3 0 4.2.4 5.2 3.2 7.5 2.8 2.4 3.9 2.7 8.5 2.3 3-.3 6.1-1.2 7.2-2.2 1.7-1.6 1.9-1.6 2.4.4.4 1.7 1.3 2 6.1 2h5.6v-13c0-14.9-.9-17.8-6.4-20.4-4.3-2-11.1-2.8-15.5-1.6zm9.9 21.3c0 2.4-3.1 5.7-5.4 5.7-4.6 0-5.5-4.3-1.2-6 3.2-1.3 6.6-1.2 6.6.3z" />
+                </svg>
+        </header>
+
+        <main class="space-y-8">
+
+            <!-- Gráfico 1: Radar de Competitividad por Macrosector -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">1. Radar de Competitividad por Macrosector</h2>
+                        <p class="text-gray-600">Este gráfico de radar compara el desempeño promedio en sostenibilidad de los diferentes macrosectores. Cada eje representa un "Pilar", y la distancia desde el centro indica la valoración ponderada promedio del sector en ese pilar.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Permite identificar visualmente las fortalezas y debilidades relativas de cada sector. Un polígono más grande y equilibrado sugiere un desempeño en sostenibilidad más robusto y balanceado.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/01_radar_macroeconomic.html" class="chart-iframe" title="Radar de Competitividad por Macrosector"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 2: Desempeño Promedio por Pilar -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">2. Desempeño Promedio por Pilar</h2>
+                        <p class="text-gray-600">Esta gráfica de barras muestra la calificación promedio ponderada de todas las empresas para cada pilar de sostenibilidad, ordenados de mayor a menor desempeño.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Identifica rápidamente cuáles son las áreas de sostenibilidad más fuertes (barras más altas) y las más débiles (barras más bajas) en el conjunto general de empresas, señalando dónde se deben enfocar los esfuerzos de mejora a nivel agregado.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/02_bar_performance_by_pillar.html" class="chart-iframe" title="Desempeño Promedio por Pilar"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 3: Distribución de Empresas por Macrosector -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">3. Distribución de Empresas por Macrosector</h2>
+                        <p class="text-gray-600">Este treemap visualiza la composición de la muestra de empresas, mostrando la proporción de compañías pertenecientes a cada macrosector. El tamaño de cada rectángulo es proporcional al número de empresas.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Ayuda a entender el peso de cada macrosector en el análisis. Un sector con mayor representación puede tener más influencia en los promedios generales y en las conclusiones del estudio.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/03_treemap_companies_by_sector.html" class="chart-iframe" title="Distribución de Empresas por Macrosector"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 4: Distribución del Desempeño por Pilar -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">4. Distribución del Desempeño por Pilar</h2>
+                        <p class="text-gray-600">El diagrama de cajas y bigotes ilustra la dispersión de las valoraciones de sostenibilidad para cada pilar. Muestra la mediana, los cuartiles y los valores atípicos (empresas individuales).</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Revela la consistencia del desempeño dentro de cada pilar. Una caja pequeña indica que la mayoría de las empresas tienen un desempeño similar, mientras que una caja grande o muchos valores atípicos señalan una gran variabilidad y falta de consenso en las prácticas.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/04_box_performance_distribution.html" class="chart-iframe" title="Distribución del Desempeño por Pilar"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 5: Ingresos vs. Desempeño -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">5. Relación Ingresos vs. Desempeño</h2>
+                        <p class="text-gray-600">Este gráfico de dispersión explora la correlación entre los ingresos operacionales de una empresa (eje X, en escala logarítmica) y su desempeño total en sostenibilidad (eje Y). El tamaño de la burbuja también representa los ingresos.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Permite analizar si las empresas más grandes tienden a tener un mejor o peor desempeño en sostenibilidad. Busca patrones o la ausencia de ellos para entender si el tamaño es un factor determinante en la gestión sostenible.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/05_scatter_income_vs_performance.html" class="chart-iframe" title="Relación Ingresos vs. Desempeño"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 6: Comparativa Multinacionales vs. Nacionales -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">6. Comparativa: Multinacionales vs. Nacionales</h2>
+                        <p class="text-gray-600">Compara la valoración ponderada promedio entre empresas que son multinacionales y aquellas que son de capital principalmente nacional.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Ofrece una visión clara sobre si la presencia internacional se correlaciona con un desempeño en sostenibilidad diferente, lo que podría deberse a estándares globales, mayor escrutinio o acceso a más recursos.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/06_bar_multinational_comparison.html" class="chart-iframe" title="Comparativa: Multinacionales vs. Nacionales"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 7: Comparativa Cotización en Bolsa -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">7. Comparativa: Cotiza en Bolsa vs. No Cotiza</h2>
+                        <p class="text-gray-600">Este gráfico compara el desempeño promedio de las empresas que cotizan en la bolsa de valores frente a las que no lo hacen.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Permite evaluar si la presión de los mercados de capitales y los requisitos de divulgación para empresas públicas se traducen en un mejor desempeño en sostenibilidad, al estar sujetas a un mayor escrutinio por parte de los inversionistas.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/07_bar_listed_comparison.html" class="chart-iframe" title="Comparativa: Cotiza en Bolsa vs. No Cotiza"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 8: Desglose Jerárquico por Bloque y Pilar -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">8. Desglose Jerárquico por Bloque y Pilar</h2>
+                        <p class="text-gray-600">El gráfico de explosión solar muestra la jerarquía del desempeño, desde los bloques de evaluación más amplios (anillo interior) hasta los pilares específicos (anillo exterior).</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Facilita la comprensión de cómo se compone el desempeño general. Permite ver qué pilares contribuyen más o menos al resultado de cada bloque temático y dónde se concentran las mayores fortalezas.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/08_sunburst_blocks_and_pillars.html" class="chart-iframe" title="Desglose Jerárquico por Bloque y Pilar"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 9: Top 10 Empresas por Desempeño -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">9. Top 10 Empresas por Desempeño Total</h2>
+                        <p class="text-gray-600">Presenta un ranking de las diez empresas con la puntuación de sostenibilidad total más alta del conjunto de datos.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Identifica a las empresas líderes y referentes en sostenibilidad. Estas compañías pueden ser estudiadas como casos de éxito o benchmarks para otras organizaciones que buscan mejorar sus prácticas.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/09_bar_top10_companies.html" class="chart-iframe" title="Top 10 Empresas por Desempeño Total"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 10: Últimas 10 Empresas por Desempeño -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">10. Últimas 10 Empresas por Desempeño Total</h2>
+                        <p class="text-gray-600">Muestra el ranking de las diez empresas con el desempeño consolidado en sostenibilidad más bajo.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Señala a las empresas con mayores áreas de oportunidad o rezago en su gestión de sostenibilidad, lo que puede indicar un riesgo reputacional, operativo o de gestión para dichas organizaciones.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/10_bar_bottom10_companies.html" class="chart-iframe" title="Últimas 10 Empresas por Desempeño Total"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 11: Distribución por Año de Fundación -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">11. Distribución de Empresas por Antigüedad</h2>
+                        <p class="text-gray-600">Un histograma que agrupa a las empresas según su año de fundación, mostrando la distribución de la antigüedad de las compañías en la muestra.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Permite explorar si existe alguna relación entre la antigüedad de una empresa y su enfoque en la sostenibilidad. ¿Son las empresas más jóvenes más ágiles en adoptar estas prácticas o las más antiguas tienen sistemas más robustos?</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/11_histogram_foundation_year.html" class="chart-iframe" title="Distribución de Empresas por Antigüedad"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 12: Proporción por Tipo de Propiedad -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">12. Proporción por Tipo de Propiedad</h2>
+                        <p class="text-gray-600">Este gráfico de dona ilustra la distribución porcentual de las empresas analizadas según su tipo de propiedad: privada, pública o mixta.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Contextualiza la muestra, mostrando qué tipo de estructura de propiedad es predominante. Esto puede ser relevante al interpretar otros resultados, como el desempeño promedio o el nivel de divulgación.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/12_pie_property_type.html" class="chart-iframe" title="Proporción por Tipo de Propiedad"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 13: Análisis de Materialidad -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">13. Análisis de Materialidad</h2>
+                        <p class="text-gray-600">Este gráfico de dispersión cruza la importancia promedio de un pilar (Ponderación de Materialidad) con el desempeño promedio en ese mismo pilar (Valoración).</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Es una matriz de materialidad clásica. Los pilares en el cuadrante superior derecho son estratégicos (alta importancia, buen desempeño). Los del cuadrante inferior derecho son áreas críticas de mejora (alta importancia, bajo desempeño).</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/13_scatter_materiality_vs_performance.html" class="chart-iframe" title="Análisis de Materialidad"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 14: Ranking de Desempeño por Macrosector -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">14. Ranking de Desempeño por Macrosector</h2>
+                        <p class="text-gray-600">Una gráfica de barras que ordena los macrosectores desde el de mayor al de menor desempeño promedio en sostenibilidad.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Ofrece una comparación directa y clara de qué sectores están liderando en sostenibilidad y cuáles están rezagados, permitiendo un benchmarking sectorial y la identificación de mejores prácticas sectoriales.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/14_bar_performance_by_macrosector.html" class="chart-iframe" title="Ranking de Desempeño por Macrosector"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 15: Comparativa Empresa Familiar -->
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">15. Comparativa: Empresa Familiar vs. No Familiar</h2>
+                        <p class="text-gray-600">Compara el desempeño promedio en sostenibilidad entre las empresas identificadas como familiares y las que no lo son.</p>
+                        <p class="text-gray-600 mt-4"><strong>Análisis Estratégico:</strong> Explora si la naturaleza de la propiedad familiar, a menudo asociada con una visión a más largo plazo y un fuerte arraigo comunitario, influye positiva o negativamente en el desempeño de la sostenibilidad.</p>
+                    </div>
+                    <div class="relative w-full h-[500px] md:h-[800px] md:col-span-7">
+                        <iframe src="charts/15_bar_family_business_comparison.html" class="chart-iframe" title="Comparativa: Empresa Familiar vs. No Familiar"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+
+</body>
+
+</html>

@@ -89,6 +89,25 @@
             </div>
             <!-- FIN: Matriz Térmica -->
 
+            <!-- INICIO: Diagrama de Violín de Dispersión Sectorial -->
+            <div class="bg-white p-6 rounded-lg shadow-md w-full">
+                <div class="grid grid-cols-1 md:grid-cols-10 gap-8 items-start">
+                    <div class="prose max-w-none md:col-span-3">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">3. Diagrama de Violín de Dispersión Sectorial</h2>
+                        <p class="text-gray-600">
+                            Este diagrama de violín muestra la distribución completa del desempeño en cada macrosector. La forma del violín indica la densidad de empresas en cada nivel de puntaje, mientras que la caja interna muestra la mediana, cuartiles y rango.
+                        </p>
+                        <p class="text-gray-600 mt-4">
+                            <strong>Análisis Estratégico:</strong> Es ideal para detectar la polarización. Una forma con dos "jorobas" (bimodal) sugiere una clara brecha entre líderes y rezagados dentro del mismo sector.
+                        </p>
+                    </div>
+                    <div class="relative w-full md:col-span-7 h-[800px]">
+                        <div id="violinContainer" class="w-full h-full"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN: Diagrama de Violín -->
+
         </main>
     </div>
 
@@ -396,6 +415,11 @@
                     return { pilar: item }
                 }));
 
+                var exporting = am5plugins_exporting.Exporting.new(root, {
+                    menu: am5plugins_exporting.ExportingMenu.new(root, {}),
+                    dataSource: data
+                });
+
 
                 // Make stuff animate on load
                 // https://www.amcharts.com/docs/v5/concepts/animations/#Initial_animation
@@ -406,10 +430,191 @@
                 document.getElementById("heatmapContainer").innerHTML = `<div class="text-red-500 text-center p-4"><strong>Error:</strong> No se pudo cargar el gráfico. Verifique que el archivo <code>heatmap_data.json</code> exista y que la consola del navegador no muestre errores.</div>`;
             });
         }
+
+        // Función para el Diagrama de Violín
+        function setupViolinChart() {
+            am5.net.load("violin_data.json").then(function (result) {
+                const sourceData = am5.JSONParser.parse(result.response);
+                console.log("Datos cargados para el diagrama de violín:", sourceData);
+                var root = am5.Root.new("violinContainer");
+                root.setThemes([am5themes_Animated.new(root)]);
+
+
+                // Create chart
+                // https://www.amcharts.com/docs/v5/charts/xy-chart/
+                var chart = root.container.children.push(
+                    am5xy.XYChart.new(root, {
+                        panX: true,
+                        panY: true,
+                        wheelX: "panX",
+                        wheelY: "zoomX"
+                    })
+                );
+
+                // Create axes
+                // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+                var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+                    maxDeviation: 0,
+                    categoryField: "range",
+                    renderer: am5xy.AxisRendererX.new(root, {
+                        minGridDistance: 20
+                    }),
+                    tooltip: am5.Tooltip.new(root, {})
+                }));
+
+                var xRenderer = xAxis.get("renderer");
+
+                xRenderer.labels.template.setAll({
+                    rotation: -45,
+                    location: 0.5,
+                    multiLocation: 0.5,
+                    centerX: am5.p100,
+                    centerY: am5.p50,
+                });
+
+                xRenderer.grid.template.setAll({
+                    location: 0.5,
+                    multiLocation: 0.5
+                });
+
+                // Set categories
+                var combinedValues = [];
+                Object.keys(sourceData).map(function (category) {
+                    combinedValues = combinedValues.concat(sourceData[category]);
+                });
+                xAxis.data.setAll(calculateData(combinedValues,50));
+
+
+                // Make Y-axes stacked
+                chart.leftAxesContainer.setAll({
+                    layout: root.verticalLayout
+                });
+
+                // Add series
+                // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+                function createSeries(category) {
+                    var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+                        maxDeviation: 0,
+                        strictMinMax: true,
+                        extraMin: 0.05,
+                        extraMax: 0.05,
+                        renderer: am5xy.AxisRendererY.new(root, {})
+                    }));
+
+
+                    var yRenderer = yAxis.get("renderer");
+
+                    yRenderer.labels.template.setAll({
+                        forceHidden: true
+                    });
+
+                    var series = chart.series.push(am5xy.SmoothedXLineSeries.new(root, {
+                        xAxis: xAxis,
+                        yAxis: yAxis,
+                        valueYField: "high",
+                        openValueYField: "low",
+                        categoryXField: "range",
+                        tooltip: am5.Tooltip.new(root, {
+                            pointerOrientation: "horizontal",
+                            labelText: "{categoryX}: [bold]{count}[/]"
+                        })
+                    }));
+
+                    series.fills.template.setAll({
+                        fillOpacity: 1,
+                        visible: true
+                    });
+
+                    series.data.setAll(calculateData(sourceData[category],50));
+
+                    yAxis.children.unshift(am5.Label.new(root, {
+                        rotation: -90,
+                        text: category,
+                        y: am5.p50,
+                        centerX: am5.p50,
+                        fill: am5.color(0xffffff),
+                        fontWeight: "500",
+                        background: am5.RoundedRectangle.new(root, {
+                            fill: series.get("fill")
+                        })
+                    }));
+                }
+
+
+                function calculateData(values, incrementSize) {
+                    values.sort(function (a, b) {
+                        if (a > b) return 1;
+                        if (a < b) return -1;
+                        return 0;
+                    });
+
+                    var increments = {};
+
+                    values.forEach(function (value) {
+                        // Determine the increment range
+                        var range = Math.floor(value / incrementSize) * incrementSize;
+                        var rangeLabel = `${range}-${range + incrementSize - 1}`;
+
+                        // Increment the count for this range
+                        if (increments[rangeLabel]) {
+                            increments[rangeLabel]++;
+                        } else {
+                            increments[rangeLabel] = 1;
+                        }
+                    });
+
+                    // Convert the increments object into an array of objects
+                    return Object.keys(increments).map(range => ({
+                        range: range,
+                        low: increments[range] / -2,
+                        high: increments[range] / 2,
+                        count: increments[range]
+                    }));
+                }
+
+                // Create series for each category
+                Object.keys(sourceData).forEach(function (category) {
+                    createSeries(category);
+                });
+
+
+                // Add cursor
+                // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+                var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
+                    xAxis: xAxis
+                }));
+                cursor.lineY.set("visible", false);
+
+                // add scrollbar
+                chart.set("scrollbarX", am5.Scrollbar.new(root, {
+                    orientation: "horizontal"
+                }));
+
+                var exporting = am5plugins_exporting.Exporting.new(root, {
+                    menu: am5plugins_exporting.ExportingMenu.new(root, {}),
+                    dataSource: sourceData
+                });
+
+
+                // Make stuff animate on load
+                // https://www.amcharts.com/docs/v5/concepts/animations/
+                chart.appear(1000, 100);
+
+
+
+
+            }).catch(function (error) {
+                console.error("Error al cargar o procesar violin_data.json:", error);
+                document.getElementById("violinContainer").innerHTML = `<div class="text-red-500 text-center p-4"><strong>Error:</strong> No se pudo cargar el gráfico. Verifique que el archivo <code>violin_data.json</code> exista y que la consola no muestre errores.</div>`;
+            });
+        }
+
+
         // Ejecutar las funciones cuando el DOM esté listo
         am5.ready(function () {
             setupRadarChart();
             setupHeatmap();
+            setupViolinChart();
         }); 
     </script>
 
