@@ -166,6 +166,7 @@ fig1.update_layout(
 )
 fig1.show()
 save_chart_as_html(fig1, '01_radar_macroeconomic.html')
+fig1.write_image("img/01_radar_macroeconomic.png", width=1000, height=800, scale=2)
 
 
 # 2. Mapa de Calor de Desempeño Empresarial
@@ -196,6 +197,7 @@ fig2.update_layout(
 )
 fig2.show()
 save_chart_as_html(fig2, '02_heatmap_performance.html')
+fig2.write_image("img/02_heatmap_performance.png", width=1000, height=800, scale=2)
 
 
 # 3. Diagrama de Violín de la Dispersión del Desempeño Sectorial
@@ -213,6 +215,7 @@ fig3.update_layout(
 )
 fig3.show()
 save_chart_as_html(fig3, '03_violin_plot_performance.html')
+fig3.write_image("img/03_violin_plot_performance.png", width=1000, height=800, scale=2)
 
 
 # 4. Treemap de Impacto: Sostenibilidad y Peso Económico
@@ -251,7 +254,7 @@ fig4.update_traces(
 )
 fig4.show()
 save_chart_as_html(fig4, '04_treemap_sustainability.html')
-
+fig4.write_image("img/04_treemap_sustainability.png", width=1000, height=800, scale=2)
 
 # 5. Diagrama de Burbujas: Sostenibilidad vs. Antigüedad Empresarial
 raw_data['Año de fundación'] = pd.to_numeric(raw_data['Año de fundación'], errors='coerce')
@@ -290,7 +293,7 @@ fig5.update_traces(
 )
 fig5.show()
 save_chart_as_html(fig5, '05_bubble_chart_sustainability_vs_age.html')
-
+fig5.write_image("img/05_bubble_chart_sustainability_vs_age.png", width=1000, height=800, scale=2)
 
 # 6. Gráfico de Coordenadas Paralelas para Perfiles de Sostenibilidad
 pivoted_data = raw_data.groupby(['Razón social', 'Nombre Pilar'])['valoracionPonderada'].sum().reset_index()
@@ -325,7 +328,7 @@ fig6.update_layout(
 )
 fig6.show()
 save_chart_as_html(fig6, '06_parallel_coordinates_sustainability_profiles.html')
-
+fig6.write_image("img/06_parallel_coordinates_sustainability_profiles.png", width=1000, height=800, scale=2)
 
 # 7. Diagrama Sankey de Flujo de Valoración
 flow1 = raw_data.groupby(['Bloque', 'Nombre Pilar'])['valoracionPonderada'].sum().reset_index()
@@ -357,7 +360,7 @@ fig7.update_layout(
 )
 fig7.show()
 save_chart_as_html(fig7, '07_sankey_diagram_sustainability_flows.html')
-
+fig7.write_image("img/07_sankey_diagram_sustainability_flows.png", width=1000, height=800, scale=2)
 
 # 8. Gráfico Solar (Sunburst) de la Jerarquía del Desempeño
 sunburst_data = raw_data.dropna(subset=['Bloque', 'Nombre Pilar'])
@@ -381,7 +384,7 @@ fig8.update_traces(
 )
 fig8.show()
 save_chart_as_html(fig8, '08_sunburst_performance_hierarchy.html')
-
+fig8.write_image("img/08_sunburst_performance_hierarchy.png", width=1000, height=800, scale=2)
 
 # 9. Matriz de Correlación entre Pilares de Sostenibilidad
 pillar_data = parallel_coords_df[dimensions]
@@ -400,7 +403,7 @@ fig9.update_layout(
 )
 fig9.show()
 save_chart_as_html(fig9, '09_correlation_matrix_sustainability_pillars.html')
-
+fig9.write_image("img/09_correlation_matrix_sustainability_pillars.png", width=1000, height=800, scale=2)
 
 # 10. Gráfico de Barras Divergentes: Desempeño Relativo al Sector
 sector_avg_score = company_agg_data.groupby('Macrosector')['Puntaje_Total_Sostenibilidad'].mean().reset_index()
@@ -431,7 +434,7 @@ fig10.update_layout(
 )
 fig10.show()
 save_chart_as_html(fig10, '10_diverging_bar_performance_vs_sector.html')
-
+fig10.write_image("img/10_diverging_bar_performance_vs_sector.png", width=1000, height=800, scale=2)
 
 # 11. Gráfico de Cajas Comparativo: Propiedad y Desempeño (Pública vs. Privada)
 property_type_data = raw_data[['Razón social', 'Tipo de propiedad (Privada, Pública, Mixta)']].drop_duplicates()
@@ -455,7 +458,7 @@ fig11.update_layout(
 )
 fig11.show()
 save_chart_as_html(fig11, '11_boxplot_performance_by_property_type.html')
-
+fig11.write_image("img/11_boxplot_performance_by_property_type.png", width=1000, height=800, scale=2)
 
 # 12. Gráfico de Densidad por Atributo: Multinacional vs. Nacional
 multinational_info = raw_data[['Razón social', '¿Multinacional? Si/No']].drop_duplicates()
@@ -492,7 +495,7 @@ fig12.update_layout(
 )
 fig12.show()
 save_chart_as_html(fig12, '12_density_plot_multinational_vs_national.html')
-
+fig12.write_image("img/12_density_plot_multinational_vs_national.png", width=1000, height=800, scale=2)
 
 # 13. Análisis de Foco Temático: Comparativa de Variables entre Líderes y Rezagados
 var_importance_data = raw_data.groupby(['Macrosector', 'Variable'])['valoracionPonderada'].mean().reset_index()
@@ -517,7 +520,7 @@ fig13.update_layout(
 )
 fig13.show()
 save_chart_as_html(fig13, '13_variable_importance_heatmap.html')
-
+fig13.write_image("img/13_variable_importance_heatmap.png", width=1000, height=800, scale=2)
 
 # 14. Gráfico de Dispersión con Línea de Tendencia: Ingresos vs. Valoración Ponderada
 scatter_data = company_agg_data[company_agg_data['Ingresos_Operacionales'] > 0].copy()
@@ -541,7 +544,7 @@ fig14.update_layout(
 )
 fig14.show()
 save_chart_as_html(fig14, '14_scatter_trend_income_vs_sustainability.html')
-
+fig14.write_image("img/14_scatter_trend_income_vs_sustainability.png", width=1000, height=800, scale=2)
 
 # 15. Diagrama de Cuerdas (Chord Diagram) de Interconexión Sector-Pilar
 chord_data = raw_data.groupby(['Macrosector', 'Nombre Pilar'])['valoracionPonderada'].sum().reset_index()
@@ -565,7 +568,7 @@ fig15.update_layout(
 )
 fig15.show()
 save_chart_as_html(fig15, '15_chord_alternative_macrosector_vs_pillar.html')
-
+fig15.write_image("img/15_chord_alternative_macrosector_vs_pillar.png", width=1000, height=800, scale=2)
 
 # 16. Gráfico de Barras Anidadas: Variables Clave por Pilar y Liderazgo Sectorial
 df_agg = raw_data.groupby(['Nombre Pilar', 'Variable', 'Macrosector'])['valoracionPonderada'].mean().reset_index()
@@ -596,6 +599,58 @@ fig16.update_layout(
 fig16.update_yaxes(matches=None, showticklabels=True)
 fig16.update_yaxes(categoryorder="total ascending")
 fig16.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
-fig16.show()
 save_chart_as_html(fig16, '16_nested_bars_variables_by_pillar_and_sector.html')
+fig16.write_image("img/16_nested_bars_variables_by_pillar_and_sector.png", width=1000, height=800, scale=2)
+
+# 17. Gráfico de Barras Anidadas: Variables Clave por Pilar y Liderazgo Sectorial
+# 1. Preparación de Datos
+# Calcular el puntaje promedio de cada variable por sector y pilar.
+df_agg = raw_data.groupby(['Nombre Pilar', 'Variable', 'Macrosector'])['valoracionPonderada'].mean().reset_index()
+
+# Para cada variable en cada pilar, encontrar el sector líder (con el puntaje más alto).
+idx = df_agg.groupby(['Nombre Pilar', 'Variable'])['valoracionPonderada'].idxmax()
+df_leaders = df_agg.loc[idx][['Nombre Pilar', 'Variable', 'Macrosector']]
+df_leaders.rename(columns={'Macrosector': 'Sector_Lider'}, inplace=True)
+
+# Calcular el puntaje promedio general de cada variable por pilar para la posición y tamaño del punto.
+df_plot_data = df_agg.groupby(['Nombre Pilar', 'Variable'])['valoracionPonderada'].mean().reset_index()
+
+# Unir la información del sector líder con los datos del gráfico.
+df_plot_data = pd.merge(df_plot_data, df_leaders, on=['Nombre Pilar', 'Variable'])
+# Reemplazar los nombres de las variables largas para mejorar la legibilidad en el gráfico.
+df_plot_data['Variable'] = df_plot_data['Variable'].apply(lambda x: wrap_text(x, max_length=30))
+
+# 2. Creación del Gráfico de Dispersión Anidado
+# Se usa facet_col para crear un subgráfico por cada 'Nombre Pilar'.
+fig_nested_scatter = px.scatter(
+    df_plot_data,
+    x='valoracionPonderada',
+    y='Variable',
+    size='valoracionPonderada', # El tamaño del punto también indica importancia.
+    color='Sector_Lider',      # El color del punto indica el sector líder.
+    hover_name='Sector_Lider',
+    facet_col='Nombre Pilar',
+    facet_col_wrap=3,          # Organiza los subgráficos en 2 columnas.
+    labels={'valoracionPonderada': 'Valoración Ponderada Promedio', 'Variable': ''},
+        facet_col_spacing=0.15
+)
+
+# 3. Personalización y Estilo del Gráfico
+fig_nested_scatter.update_layout(
+    title_text='<b>Variables Clave por Pilar y Liderazgo Sectorial</b><br><sup>El color indica el Macrosector líder; el tamaño, la importancia de la variable</sup>',
+    title_x=0.5,
+    font=dict(family="Arial, sans-serif", size=10, color="black"),
+    height=max(800, len(df_plot_data['Nombre Pilar'].unique()) * 200), # Altura dinámica
+
+)
+
+# Hacer que cada subgráfico tenga su propio eje Y independiente y ordenar las variables.
+fig_nested_scatter.update_yaxes(matches=None, showticklabels=True)
+fig_nested_scatter.update_yaxes(categoryorder="total ascending")
+# Actualizar los títulos de cada subgráfico para que no muestren "Nombre Pilar=".
+fig_nested_scatter.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
+
+fig_nested_scatter.show()
+save_chart_as_html(fig_nested_scatter, '17_nested_scatter_variables_by_pillar_and_sector.html')
+fig_nested_scatter.write_image("img/17_nested_scatter_variables_by_pillar_and_sector.png", width=1000, height=800, scale=2)
 
