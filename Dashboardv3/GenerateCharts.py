@@ -77,7 +77,7 @@ def save_chart_as_html(fig, filename):
         os.makedirs('charts')
     
     filepath = os.path.join('charts', filename)
-    pio.write_html(fig, file=filepath, auto_open=False)
+    pio.write_html(fig, file=filepath, auto_open=False, include_plotlyjs='cdn', full_html=True)
 
 def wrap_text(text, max_length=25):
     """
@@ -603,53 +603,40 @@ save_chart_as_html(fig16, '16_nested_bars_variables_by_pillar_and_sector.html')
 fig16.write_image("img/16_nested_bars_variables_by_pillar_and_sector.png", width=1000, height=800, scale=2)
 
 # 17. Gráfico de Barras Anidadas: Variables Clave por Pilar y Liderazgo Sectorial
-# 1. Preparación de Datos
-# Calcular el puntaje promedio de cada variable por sector y pilar.
 df_agg = raw_data.groupby(['Nombre Pilar', 'Variable', 'Macrosector'])['valoracionPonderada'].mean().reset_index()
 
-# Para cada variable en cada pilar, encontrar el sector líder (con el puntaje más alto).
 idx = df_agg.groupby(['Nombre Pilar', 'Variable'])['valoracionPonderada'].idxmax()
 df_leaders = df_agg.loc[idx][['Nombre Pilar', 'Variable', 'Macrosector']]
 df_leaders.rename(columns={'Macrosector': 'Sector_Lider'}, inplace=True)
 
-# Calcular el puntaje promedio general de cada variable por pilar para la posición y tamaño del punto.
 df_plot_data = df_agg.groupby(['Nombre Pilar', 'Variable'])['valoracionPonderada'].mean().reset_index()
 
-# Unir la información del sector líder con los datos del gráfico.
 df_plot_data = pd.merge(df_plot_data, df_leaders, on=['Nombre Pilar', 'Variable'])
-# Reemplazar los nombres de las variables largas para mejorar la legibilidad en el gráfico.
 df_plot_data['Variable'] = df_plot_data['Variable'].apply(lambda x: wrap_text(x, max_length=30))
 
-# 2. Creación del Gráfico de Dispersión Anidado
-# Se usa facet_col para crear un subgráfico por cada 'Nombre Pilar'.
 fig_nested_scatter = px.scatter(
     df_plot_data,
     x='valoracionPonderada',
     y='Variable',
-    size='valoracionPonderada', # El tamaño del punto también indica importancia.
-    color='Sector_Lider',      # El color del punto indica el sector líder.
+    size='valoracionPonderada',
+    color='Sector_Lider',     
     hover_name='Sector_Lider',
     facet_col='Nombre Pilar',
-    facet_col_wrap=3,          # Organiza los subgráficos en 2 columnas.
+    facet_col_wrap=3,         
     labels={'valoracionPonderada': 'Valoración Ponderada Promedio', 'Variable': ''},
         facet_col_spacing=0.15
 )
 
-# 3. Personalización y Estilo del Gráfico
 fig_nested_scatter.update_layout(
     title_text='<b>Variables Clave por Pilar y Liderazgo Sectorial</b><br><sup>El color indica el Macrosector líder; el tamaño, la importancia de la variable</sup>',
     title_x=0.5,
     font=dict(family="Arial, sans-serif", size=10, color="black"),
-    height=max(800, len(df_plot_data['Nombre Pilar'].unique()) * 200), # Altura dinámica
+    height=max(800, len(df_plot_data['Nombre Pilar'].unique()) * 200),
 
 )
-
-# Hacer que cada subgráfico tenga su propio eje Y independiente y ordenar las variables.
 fig_nested_scatter.update_yaxes(matches=None, showticklabels=True)
 fig_nested_scatter.update_yaxes(categoryorder="total ascending")
-# Actualizar los títulos de cada subgráfico para que no muestren "Nombre Pilar=".
 fig_nested_scatter.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
-
 fig_nested_scatter.show()
 save_chart_as_html(fig_nested_scatter, '17_nested_scatter_variables_by_pillar_and_sector.html')
 fig_nested_scatter.write_image("img/17_nested_scatter_variables_by_pillar_and_sector.png", width=1000, height=800, scale=2)

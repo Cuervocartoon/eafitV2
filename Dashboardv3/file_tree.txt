@@ -1,0 +1,47 @@
+.
+├── charts
+│   ├── 01_radar_macroeconomic.html
+│   ├── 02_heatmap_performance.html
+│   ├── 03_violin_plot_performance.html
+│   ├── 04_treemap_sustainability.html
+│   ├── 05_bubble_chart_sustainability_vs_age.html
+│   ├── 06_parallel_coordinates_sustainability_profiles.html
+│   ├── 07_sankey_diagram_sustainability_flows.html
+│   ├── 08_sunburst_performance_hierarchy.html
+│   ├── 09_correlation_matrix_sustainability_pillars.html
+│   ├── 10_diverging_bar_performance_vs_sector.html
+│   ├── 11_boxplot_performance_by_property_type.html
+│   ├── 12_density_plot_multinational_vs_national.html
+│   ├── 13_variable_importance_heatmap.html
+│   ├── 14_scatter_trend_income_vs_sustainability.html
+│   ├── 15_chord_alternative_macrosector_vs_pillar.html
+│   ├── 16_nested_bars_variables_by_pillar_and_sector.html
+│   └── 17_nested_scatter_variables_by_pillar_and_sector.html
+├── Cuadro de Mando Estratégico de Visualizaciones de Sostenibilidad.docx
+├── EAFIT_Alexa.ipynb
+├── eafitBrand.json
+├── empresasEafit.csv
+├── Empresas muestreadas 2024 VF.xlsx
+├── file_tree.txt
+├── GenerateCharts.py
+├── img
+│   ├── 01_radar_macroeconomic.png
+│   ├── 02_heatmap_performance.png
+│   ├── 03_violin_plot_performance.png
+│   ├── 04_treemap_sustainability.png
+│   ├── 05_bubble_chart_sustainability_vs_age.png
+│   ├── 06_parallel_coordinates_sustainability_profiles.png
+│   ├── 07_sankey_diagram_sustainability_flows.png
+│   ├── 08_sunburst_performance_hierarchy.png
+│   ├── 09_correlation_matrix_sustainability_pillars.png
+│   ├── 10_diverging_bar_performance_vs_sector.png
+│   ├── 11_boxplot_performance_by_property_type.png
+│   ├── 12_density_plot_multinational_vs_national.png
+│   ├── 13_variable_importance_heatmap.png
+│   ├── 14_scatter_trend_income_vs_sustainability.png
+│   ├── 15_chord_alternative_macrosector_vs_pillar.png
+│   ├── 16_nested_bars_variables_by_pillar_and_sector.png
+│   └── 17_nested_scatter_variables_by_pillar_and_sector.png
+└── index.html
+
+3 directories, 42 files
